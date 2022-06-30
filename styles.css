@@ -1,0 +1,132 @@
+/* Universal Styles */
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(249, 250, 239);
+  display: block;
+}
+
+h1 {
+  color: rgb(0, 174, 255);
+  justify-self: center;
+  align-self: center;
+  font-size: 2rem;
+}
+
+span {
+  display: inline-block;
+}
+
+span.ani1 {
+  transition-delay: 10s;
+  animation: bounce 1s ease-in forwards;
+  animation-delay: calc(0.6s + calc(0.001s * var(--i)));
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  20% {
+    transform: translateY(-3rem);
+  }
+
+  40%,
+  100% {
+    transform: translateY(0rem);
+  }
+}
+
+h1.ani2 {
+  animation: pop 1s ease-in forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes pop {
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 56, 95);
+  padding: 0.56rem 0;
+  box-shadow: 0 0.22rem 0 rgb(0, 174, 255);
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+nav h1 {
+  font-size: 1.16rem;
+  margin-left: 2.5rem;
+  color: rgb(239, 242, 192);
+}
+
+nav span {
+  margin-left: 0.56rem;
+  opacity: 1;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgb(239, 242, 192);
+  padding: 0.9rem;
+  transition: all 0.2s ease-out;
+  border-radius: 0.56rem;
+}
+
+nav a:hover {
+  color: rgb(0, 56, 95);
+  background-color: rgb(239, 242, 192);
+  border-radius: 0.56rem;
+  padding: 0.9rem;
+  background-size: contain;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+/* IDs */
+#home {
+  text-align: right;
+  margin: 2.78rem 2.78rem 5rem 0;
+  flex-wrap: wrap;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home img {
+  overflow: hidden;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  margin-right: 4.2rem;
+}
+
+#mission {
+  text-align: left;
+  margin-left: 4.2rem;
+}
+
+#mission h1 {
+  font-size: 4rem;
+}
+
+#content {
+  margin: 10rem 5.55rem;
+}
