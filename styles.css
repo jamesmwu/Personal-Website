@@ -3,6 +3,7 @@ html {
   font-family: "Open Sans", sans-serif;
   font-size: 100%;
   scroll-behavior: smooth;
+  word-spacing: 0.1rem;
 }
 
 body {
@@ -63,7 +64,7 @@ nav {
   padding: 0.56rem 0;
   box-shadow: 0 0.22rem 0 rgb(0, 174, 255);
   top: 0;
-  position: fixed;
+  position: sticky;
   width: 100%;
   z-index: 1;
 }
@@ -99,15 +100,23 @@ p {
   font-size: 1.2rem;
 }
 
+footer {
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  /* box-shadow: 0 -0.1rem 0 rgb(0, 0, 0); */
+  margin: 3rem 0;
+}
+
 /* IDs */
 #home {
   text-align: right;
-  margin: 2.78rem 2.78rem 5rem 0;
   flex-wrap: wrap;
   flex-direction: row;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 7rem 0 5rem 0;
 }
 
 #home img {
@@ -121,6 +130,8 @@ p {
 #mission {
   text-align: left;
   margin-left: 4.2rem;
+  width: 45%;
+  overflow-wrap: normal;
 }
 
 #mission h1 {
@@ -128,5 +139,22 @@ p {
 }
 
 #content {
-  margin: 10rem 5.55rem;
+  margin: 5rem 10rem;
+}
+
+#info p {
+  margin-bottom: 3rem;
+}
+
+/* Classes */
+.anchor {
+  position: relative;
+  top: -7rem;
+  visibility: hidden;
+}
+
+.hanchor {
+  top: -100rem;
+  visibility: hidden;
+  position: relative;
 }
