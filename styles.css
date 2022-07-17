@@ -21,7 +21,14 @@ h1 {
 
 h2 {
   font-size: 1.1rem;
+}
+
+button h2 {
   margin: 0.6rem 1.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 button {
@@ -187,4 +194,46 @@ footer {
   display: inline-block;
   margin-right: 1rem;
   margin-top: 1rem;
+}
+
+.card {
+  border-radius: 0.5rem;
+  display: inline-flex;
+  /* height: 100%; */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  flex-direction: row;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card img {
+  width: 70%;
+  aspect-ratio: auto;
+  /* 
+  border-top-right-radius: 0.5rem; */
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  /* border-radius: 0.5rem; */
+}
+
+.card hr {
+  margin: -0.01rem 0;
+  border: 0.01rem solid rgba(0, 0, 0, 0.125);
+}
+
+.card-body hr {
+  border: 0.01rem solid rgba(0, 0, 0, 0.125);
+  margin: 0 2rem;
+}
+
+.card-body {
+  text-align: center;
+  align-items: center;
+  background-color: white;
+  flex: 1;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.card-body ul {
+  text-align: left;
 }
