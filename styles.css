@@ -198,16 +198,24 @@ footer {
 
 .card {
   border-radius: 0.5rem;
-  display: inline-flex;
+  /* display: inline-flex; */
   /* height: 100%; */
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   flex-direction: row;
+  flex: 1;
   border: 1px solid rgba(0, 0, 0, 0.125);
+  margin-bottom: 4rem;
+}
+
+.inline {
+  display: inline-flex;
 }
 
 .card img {
+  display: block;
   width: 70%;
-  aspect-ratio: auto;
+  height: auto;
+  overflow: hidden;
   /* 
   border-top-right-radius: 0.5rem; */
   border-top-left-radius: 0.5rem;
