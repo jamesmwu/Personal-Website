@@ -1,7 +1,7 @@
 //Adds the characters one by one
 function onTick() {
   const span = text.querySelectorAll("span")[char]; //Get all spans generated
-  span.classList.add("ani1"); //Adding the 'fade' class to every single span
+  span.classList.add("ani1"); //Adding the 'ani1' class to every single span
   char++;
   if (char === splitText.length) {
     complete();
@@ -25,6 +25,23 @@ function cycle() {
   i++;
 }
 
+//This is the function to make the heading animation play on home button click
+function reanimate() {
+  for (let i = 0; i < splitText.length; i++) {
+    // This changes everything
+    ("use strict");
+
+    // retrieve the element
+    var element = document.querySelector(".reset" + i);
+    element.classList.remove("ani2");
+    // -> triggering reflow /* The actual magic */
+    element.offsetWidth = element.offsetWidth;
+    void element.offsetWidth;
+    // -> and re-adding the class
+    element.classList.add("ani2");
+  }
+}
+
 var i = 0;
 var funFacts = [
   "Outside of programming, some of my hobbies include playing basketball, badminton, running, drawing, writing, and playing violin!",
@@ -43,10 +60,17 @@ text.textContent = "";
 
 for (let i = 0; i < splitText.length; i++) {
   if (splitText[i] === " ")
-    text.innerHTML += '<span style="--i:' + (i + 1) + ';">&nbsp;</span>';
+    text.innerHTML +=
+      '<span class="reset' + i + '" style="--i:' + (i + 1) + ';">&nbsp;</span>';
   else
     text.innerHTML +=
-      '<span style="--i:' + (i + 1) + ';">' + splitText[i] + "</span>";
+      '<span class="reset' +
+      i +
+      '" style="--i:' +
+      (i + 1) +
+      ';">' +
+      splitText[i] +
+      "</span>";
 }
 
 let char = 0;
