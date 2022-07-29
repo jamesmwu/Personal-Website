@@ -85,7 +85,7 @@ span.ani1 {
 
 span.ani2 {
   animation: color-switch 1.5s ease-in forwards;
-  animation-delay: 1s;
+  animation-delay: 0.7s;
 }
 
 @keyframes color-switch {
@@ -258,4 +258,17 @@ footer {
 
 .card-body ul {
   text-align: left;
+  margin: 0 0.5rem 1.5rem;
+}
+
+.card-body p {
+  margin: 1rem 2rem;
+  font-size: 1rem;
+  text-align: left;
+  font-weight: lighter;
+  /* line-height: 1.6rem; */
+}
+
+.card-body h3 {
+  margin: 1.5rem 0 1rem;
 }
