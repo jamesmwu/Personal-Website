@@ -160,10 +160,10 @@ footer {
 
 #home img {
   overflow: hidden;
-  width: 20rem;
-  height: 20rem;
+  height: auto;
   border-radius: 50%;
   margin-right: 4.2rem;
+  width: 35%;
 }
 
 #mission {
@@ -271,4 +271,105 @@ footer {
 
 .card-body h3 {
   margin: 1.5rem 0 1rem;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 480px) {
+  body {
+    margin: 0;
+    background-color: rgb(249, 250, 239);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    /* background-color: blue; */
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  html {
+    display: table;
+    margin: auto;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  nav h1 {
+    font-size: 3rem;
+  }
+
+  nav a {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  h1.james {
+    /* background-color: yellow; */
+    text-align: center;
+    min-width: 25rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+    /* margin: auto; */
+    /* display: flex;
+    justify-content: center; */
+  }
+
+  .james span {
+    font-size: 5rem;
+  }
+
+  #content {
+    margin: 5rem 7rem;
+  }
+
+  #home {
+    /* margin: 0; */
+    /* min-width: 50rem; */
+    /* background-color: red; */
+    /* text-align: right; */
+    /* flex-wrap: wrap; */
+    /*flex-direction: column; */
+    /* display: flex; */
+    display: table-cell;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    /* vertical-align: middle; */
+    /* margin: 7rem 0 5rem 0; */
+  }
+
+  #home img {
+    /* margin: 3rem; */
+    margin: 2rem 0 3rem;
+    width: 80%;
+  }
+
+  #home p {
+    width: 30rem;
+  }
+
+  #info h1 {
+    margin-top: 6rem;
+  }
+
+  button {
+    width: 15rem;
+    height: 7rem;
+  }
+
+  button h2 {
+    font-size: 2.2rem;
+  }
 }
