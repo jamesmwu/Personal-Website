@@ -274,7 +274,7 @@ footer {
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 50em) {
   body {
     margin: 0;
     background-color: rgb(249, 250, 239);
