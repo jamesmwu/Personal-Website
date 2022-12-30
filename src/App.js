@@ -1,28 +1,17 @@
 import React from 'react';
 import './App.css';
-import Home from './components/Home';
-import Experience from './components/Experience';
-import Contact from './components/Contact';
-import { Routes, Route, Link } from 'react-router-dom';
+import './components.css';
+import Home from './pages/Home';
+import Experience from './pages/Experience';
+import Contact from './pages/Contact';
+import NavBar from './components/NavBar';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div>
       {/* Navigation */}
-      <div id='navigation'>
-        <h1>James Wu</h1>
-        <nav>
-          <Link className='navLinks' to='/'>
-            Home
-          </Link>
-          <Link className='navLinks' to='/experience'>
-            Experience
-          </Link>
-          <Link className='navLinks' to='/contact'>
-            Contact
-          </Link>
-        </nav>
-      </div>
+      <NavBar />
 
       {/* Routes */}
       <div id='content'>

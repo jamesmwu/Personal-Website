@@ -1,0 +1,25 @@
+.intro {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.intro img {
+  width: 25%;
+  border-radius: 50%;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  line-height: 3rem;
+  width: 50%;
+}
+
+.bio h1 {
+  font-size: 4.5rem;
+}
+
+.bio p {
+  font-size: 1.5rem;
+}

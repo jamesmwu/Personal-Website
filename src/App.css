@@ -6,7 +6,13 @@
 
 :root {
   --darkBlue: rgb(0, 56, 95);
+  --lightBlue: rgb(0, 174, 255);
   --cream: rgb(239, 242, 192);
+}
+
+body {
+  margin: 0;
+  background-color: rgb(249, 250, 239);
 }
 
 #content {
@@ -14,34 +20,5 @@
 }
 
 h1 {
-  font-size: 1.7rem;
-}
-
-#navigation {
-  background-color: var(--darkBlue);
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 3rem;
-  color: var(--cream);
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-nav a {
-  padding: 0.5rem;
-  border-radius: 0.6rem;
-  transition: all 0.15s ease-out;
-  margin: 0 0.5rem;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-nav a:hover {
-  color: var(--darkBlue);
-  background-color: var(--cream);
+  color: var(--lightBlue);
 }
