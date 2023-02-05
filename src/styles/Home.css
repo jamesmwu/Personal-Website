@@ -12,7 +12,7 @@
 .bio {
   display: flex;
   flex-direction: column;
-  line-height: 3rem;
+  line-height: 2.5rem;
   width: 50%;
 }
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import Headshot from '../img/Headshot.jpg';
-import './Home.css';
+import '../styles/Home.css';
 
 function Home() {
   return (
@@ -15,6 +15,7 @@ function Home() {
           </p>
         </div>
       </div>
+      <h1>About</h1>
     </div>
   );
 }
