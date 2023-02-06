@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/App.css';
-import './styles/components.css';
+import './styles/Components.css';
 import Home from './pages/Home';
 import Experience from './pages/Experience';
 import Organizations from './pages/Organizations';
