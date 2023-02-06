@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/Experience.css';
 import ProjectCard from '../components/ProjectCard';
 import InternshipCard from '../components/InternshipCard';
 
@@ -73,7 +74,7 @@ const projects = [
 
 function Experience() {
   return (
-    <div>
+    <div className='exp'>
       <h1>Internships</h1>
       {internships.map(internship => {
         return (
@@ -88,6 +89,7 @@ function Experience() {
           </div>
         );
       })}
+      <hr className='lineBreak' />
       <h1>Projects</h1>
       {projects.map(project => {
         return (

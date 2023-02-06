@@ -1,0 +1,9 @@
+.exp h1 {
+  font-size: 3rem;
+}
+
+.lineBreak {
+  border: 0.01rem solid rgba(0, 0, 0, 0.256);
+  margin-top: 8rem;
+  margin-bottom: 6rem;
+}

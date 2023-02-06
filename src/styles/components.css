@@ -89,4 +89,10 @@ nav a:hover {
 .tech {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.techContainer {
+  display: flex;
+  align-items: center;
 }

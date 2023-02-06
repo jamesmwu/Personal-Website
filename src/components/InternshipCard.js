@@ -16,14 +16,15 @@ function InternshipCard({ title, desc, website, points, tech }) {
               return <li>{item}</li>;
             })}
           </ul>
-          {website ? (
-            <div style={{ margin: '2rem 0' }}>
-              <StylizedButton text={'Website'} link={website} />
-            </div>
-          ) : null}
+
           <div className='tech'>
-            <h3>Technologies:&nbsp;&nbsp;</h3>
-            <p>{stack}</p>
+            <div className='techContainer'>
+              <h3>Technologies:&nbsp;&nbsp;</h3>
+              <p>{stack}</p>
+            </div>
+            {website ? (
+              <StylizedButton text={'Website'} link={website} />
+            ) : null}
           </div>
         </div>
       </div>
