@@ -62,7 +62,7 @@ nav a:hover {
   background-color: var(--cream);
 }
 
-/* ProjectBox */
+/* ProjectCard and InternshipCard */
 .box {
   background-color: white;
   border-radius: 0.6rem;
@@ -85,9 +85,8 @@ nav a:hover {
   justify-content: space-between;
   min-height: 13rem;
 }
-/* 
-.btnContainer {
-  background-color: green;
-  height: 100%;
-  justify-content: space-evenly;
-} */
+
+.tech {
+  display: flex;
+  align-items: center;
+}

@@ -1,21 +1,43 @@
 import React from 'react';
 import ProjectCard from '../components/ProjectCard';
+import InternshipCard from '../components/InternshipCard';
 
 const internships = [
   {
     title: 'Hussle',
-    description: 'TBD (Resume)',
+    description:
+      "Hussle is a startup founded at UCLA. It seeks to provide a platform for students to exchange goods and services with one another, acting as an intermediary for those who'd like to maintain side hustles and customers who'd prefer cheaper alternatives to expensive services targeted at college students. As a front-end development intern, I built several screens and features of the Hussle app listed below. The app is currently published and downloadable for iOS on the app store.",
+    points: [
+      'Constructed and implemented several screens and features of Hussle, an online student marketplace app, using React Native.',
+      'Built user authentication, saved post functionality, navigation, and a user feed displaying all services and products offered by the community.',
+      'Collaborated with graphic designers, application testers, and product management to launch the application on the iOS store within 4 months.',
+      'Integrated and applied over 15 unique and reusable components for front-end elements.'
+    ],
     website: 'https://www.hussle.us/',
     tech: ['React Native']
   },
   {
     title: 'Sike',
-    description: 'TBD (Resume)',
+    description:
+      'As part of Sike, I am a mobile software developer working on a wellness app that seeks to promote mental health and positivity through the gamification of journaling, done through visual UI changes based on user sentiment analysis. As a developer, I take on a full-stack role on this team, and have built out several screens, components, and features of the app. Currently, I am helping develop a machine learning model to conduct a sentiment analysis and also helping to properly maintain our database.',
+
+    points: [
+      'Spearheaded the design and implementation of Sike, a wellness app that gamifies journaling using user sentiment analysis.',
+      'Led the front-end development using React Native and built Home, Journal Entry, and Settings pages.',
+      'Explored methods for natural language processing and currently corresponding with four engineers to develop a machine learning model that analyzes and quantifies the sentiment of a given text using TensorFlow.'
+    ],
     tech: ['React Native', 'Firebase', 'TensorFlow']
   }
 ];
 
 const projects = [
+  {
+    title: 'Computer Numerical Control Machine Monitor',
+    description:
+      'This was a project based on Industry 4.0, which seeks to equip factory machines with sensors that report data about themselves. The goal of this site was to monitor machines in shop and display data in an easy to understand way such that one could see the production status of the machine.',
+    github: 'To be grouped',
+    tech: ['React.js', 'ASP.NET', 'MySQL']
+  },
   {
     title: 'UCLA ACM Hack Website',
     description:
@@ -33,11 +55,10 @@ const projects = [
     tech: ['React.js', 'Gatsby']
   },
   {
-    title: 'Computer Numerical Control Machine Monitor',
-    description:
-      'This was a project based on Industry 4.0, which seeks to equip factory machines with sensors that report data about themselves. The goal of this site was to monitor machines in shop and display data in an easy to understand way such that one could see the production status of the machine.',
-    github: 'To be grouped',
-    tech: ['React.js', 'ASP.NET', 'MySQL']
+    title: 'Bruin Odyssey',
+    description: 'TBD',
+    website: 'https://bruinodyssey.uclaacm.com/',
+    tech: ['React.js', 'Next.js', 'TypeScript', 'MongoDB']
   },
   {
     title: 'Autonomous Pathfinding Rover',
@@ -55,7 +76,17 @@ function Experience() {
     <div>
       <h1>Internships</h1>
       {internships.map(internship => {
-        return <p>BYE</p>;
+        return (
+          <div style={{ marginBottom: '3rem' }}>
+            <InternshipCard
+              title={internship.title}
+              desc={internship.description}
+              website={internship.website}
+              points={internship.points}
+              tech={internship.tech}
+            />
+          </div>
+        );
       })}
       <h1>Projects</h1>
       {projects.map(project => {
