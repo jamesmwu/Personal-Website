@@ -16,7 +16,8 @@ function Home() {
           <h1>James Wu</h1>
           <p>
             Hi! Thanks for checking out my website :&#41; <br />
-            Feel free to find more info about me and my projects below!
+            Whether you're a recruiter or someone stalking around, feel free to
+            find more info about me and my projects here!
           </p>
         </div>
       </div>
