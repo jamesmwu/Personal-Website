@@ -12,14 +12,21 @@
 .bio {
   display: flex;
   flex-direction: column;
-  line-height: 2.5rem;
+  line-height: 2.2rem;
   width: 50%;
 }
 
 .bio h1 {
-  font-size: 4.5rem;
+  font-size: 4rem;
 }
 
 .bio p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.aboutBtns {
+  margin-top: 2.5rem;
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
 }

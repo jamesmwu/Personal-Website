@@ -1,15 +1,11 @@
 import React from 'react';
 
-function StylizedButton() {
-  function test() {
-    console.log('Work!');
-  }
-
+function StylizedButton({ text, link }) {
   return (
-    <div>
-      <button className='stylizedBtn' onClick={test()}>
-        <p>Resume</p>
-      </button>
+    <div className='stylizedBtn'>
+      <a href={link} target='_blank'>
+        {text}
+      </a>
     </div>
   );
 }
