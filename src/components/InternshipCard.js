@@ -2,7 +2,10 @@ import React from 'react';
 import StylizedButton from '../components/StylizedButton';
 
 function InternshipCard({ title, desc, website, points, tech }) {
-  let stack = tech.join(', ');
+  let stack;
+  if (tech) {
+    stack = tech.join(', ');
+  }
 
   return (
     <div className='box'>
@@ -19,7 +22,7 @@ function InternshipCard({ title, desc, website, points, tech }) {
 
           <div className='tech'>
             <div className='techContainer'>
-              <h3>Technologies:&nbsp;&nbsp;</h3>
+              {stack ? <h3>Technologies:&nbsp;&nbsp;</h3> : null}
               <p>{stack}</p>
             </div>
             {website ? (

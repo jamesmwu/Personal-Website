@@ -1,3 +1,13 @@
 .org h1 {
   font-size: 3rem;
 }
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.orgCard {
+  margin-bottom: 4rem;
+}

@@ -8,7 +8,7 @@ function ProjectCard({ title, desc, github, website, tech }) {
         <h2>{title}</h2>
         <hr />
         <p>{desc}</p>
-        <div className='info'>
+        <div className='info proj'>
           <ul>
             {tech.map(item => {
               return <li>{item}</li>;

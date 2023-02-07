@@ -68,7 +68,6 @@ nav a:hover {
   border-radius: 0.6rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   padding: 1rem;
-  text-align: justify;
 }
 
 .box hr {
@@ -83,6 +82,9 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.proj {
   min-height: 13rem;
 }
 
