@@ -38,14 +38,6 @@ const internships = [
 
 const projects = [
   {
-    title: 'Computer Numerical Control Machine Monitor',
-    description:
-      'This was a project based on Industry 4.0, which seeks to equip factory machines with sensors that report data about themselves. The goal of this site was to monitor machines in shop and display data in an easy to understand way such that one could see the production status of the machine.',
-    github: 'To be grouped',
-    tech: ['React.js', 'ASP.NET', 'MySQL'],
-    image: CNCMachineMonitor
-  },
-  {
     title: 'UCLA ACM Hack Website',
     description:
       'Maintained the ACM Hack website with a team of 10 other developers. This includes updating the Hack Archive and Event pages with past / current workshops, fixing bugs detected (e.g format issues on mobile), and more.',
@@ -64,6 +56,13 @@ const projects = [
     image: Hoth
   },
   {
+    title: 'Computer Numerical Control Machine Monitor',
+    description:
+      'This was a project based on Industry 4.0, which seeks to equip factory machines with sensors that report data about themselves. The goal of this site was to monitor machines in shop and display data in an easy to understand way such that one could see the production status of the machine.',
+    tech: ['React.js', 'ASP.NET', 'MySQL'],
+    image: CNCMachineMonitor
+  },
+  {
     title: 'Bruin Odyssey',
     description:
       'Bruin Odyssey was a quarter-long coding puzzle event for the UCLA community. I built registration pages, landing page, leaderboard, themes, and designed/drew all assets for this project. Primarily used TypeScript alongside Next.js and Material UI.',
@@ -75,7 +74,6 @@ const projects = [
     title: 'Autonomous Pathfinding Rover',
     description:
       'This was a team engineering project where I helped CAD, wire, 3D print, and code a self driving autonomous Rover. We utilized Arduino and ultrasound sensors to run and navigate the rover. By the end, it was able to successfully navigate around blocks in a small obstacle course, identify a target block, and then capture it with built-in claws.',
-    github: 'To be created',
     website:
       'https://drive.google.com/file/d/1xpaB1gpdHcrj2WzBDVi211XRWmGpyxal/view',
     tech: ['Arduino', 'SolidWorks'],

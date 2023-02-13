@@ -23,7 +23,7 @@ function ProjectCard({ title, desc, github, website, tech, image }) {
             </div>
           </div>
           <div className='projImg'>
-            <img src={image} />
+            <img src={image} alt={title} />
           </div>
         </div>
       </div>
