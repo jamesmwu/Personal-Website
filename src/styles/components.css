@@ -98,3 +98,25 @@ nav a:hover {
   display: flex;
   align-items: center;
 }
+
+.btnContainer {
+  height: 7rem;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.projImg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.projImg img {
+  max-height: 400px;
+}

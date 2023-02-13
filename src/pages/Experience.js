@@ -2,6 +2,11 @@ import React from 'react';
 import '../styles/Experience.css';
 import ProjectCard from '../components/ProjectCard';
 import InternshipCard from '../components/InternshipCard';
+import Hack from '../img/Hack.png';
+import CNCMachineMonitor from '../img/CNC_Machine_Monitor.png';
+import Hoth from '../img/HOTH.png';
+import BruinOdyssey from '../img/Bruin_Odyssey.png';
+import Rover from '../img/Rover.png';
 
 const internships = [
   {
@@ -37,7 +42,8 @@ const projects = [
     description:
       'This was a project based on Industry 4.0, which seeks to equip factory machines with sensors that report data about themselves. The goal of this site was to monitor machines in shop and display data in an easy to understand way such that one could see the production status of the machine.',
     github: 'To be grouped',
-    tech: ['React.js', 'ASP.NET', 'MySQL']
+    tech: ['React.js', 'ASP.NET', 'MySQL'],
+    image: CNCMachineMonitor
   },
   {
     title: 'UCLA ACM Hack Website',
@@ -45,7 +51,8 @@ const projects = [
       'Maintained the ACM Hack website with a team of 10 other developers. This includes updating the Hack Archive and Event pages with past / current workshops, fixing bugs detected (e.g format issues on mobile), and more.',
     github: 'https://github.com/uclaacm/hack.uclaacm.com',
     website: 'https://hack.uclaacm.com/',
-    tech: ['React.js', 'Gatsby']
+    tech: ['React.js', 'Gatsby'],
+    image: Hack
   },
   {
     title: 'UCLA ACM HOTH Website',
@@ -53,13 +60,15 @@ const projects = [
       'Maintained the ACM HOTH website with a team of 10 other developers. This website relates to Hack on the Hill, an annual hackathon ACM Hack hosts. This includes updating the gallery page, banner, and other bug fixes as well.',
     github: 'https://github.com/uclaacm/hoth.uclaacm.com',
     website: 'https://hoth.uclaacm.com/',
-    tech: ['React.js', 'Gatsby']
+    tech: ['React.js', 'Gatsby'],
+    image: Hoth
   },
   {
     title: 'Bruin Odyssey',
     description: 'TBD',
     website: 'https://bruinodyssey.uclaacm.com/',
-    tech: ['React.js', 'Next.js', 'TypeScript', 'MongoDB']
+    tech: ['React.js', 'Next.js', 'TypeScript', 'MongoDB'],
+    image: BruinOdyssey
   },
   {
     title: 'Autonomous Pathfinding Rover',
@@ -68,7 +77,8 @@ const projects = [
     github: 'To be created',
     website:
       'https://drive.google.com/file/d/1xpaB1gpdHcrj2WzBDVi211XRWmGpyxal/view',
-    tech: ['Arduino', 'SolidWorks']
+    tech: ['Arduino', 'SolidWorks'],
+    image: Rover
   }
 ];
 
@@ -100,6 +110,7 @@ function Experience() {
               github={project.github}
               website={project.website}
               tech={project.tech}
+              image={project.image}
             />
           </div>
         );

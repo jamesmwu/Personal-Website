@@ -30,8 +30,7 @@ function Home() {
           <h1>James Wu</h1>
           <p>
             Hi! Thanks for checking out my website :&#41; <br />
-            Whether you're a recruiter or someone stalking my socials, feel free
-            to find more info about me and my projects here!
+            Feel free to find more info about me and my projects here!
           </p>
         </div>
       </div>
