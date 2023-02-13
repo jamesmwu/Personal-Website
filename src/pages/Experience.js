@@ -65,7 +65,8 @@ const projects = [
   },
   {
     title: 'Bruin Odyssey',
-    description: 'TBD',
+    description:
+      'Bruin Odyssey was a quarter-long coding puzzle event for the UCLA community. I built registration pages, landing page, leaderboard, themes, and designed/drew all assets for this project. Primarily used TypeScript alongside Next.js and Material UI.',
     website: 'https://bruinodyssey.uclaacm.com/',
     tech: ['React.js', 'Next.js', 'TypeScript', 'MongoDB'],
     image: BruinOdyssey
