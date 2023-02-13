@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react-gh-pages/static/css/main.b497c2fb.css",
+    "main.js": "/react-gh-pages/static/js/main.17ed7bff.js",
+    "static/media/Hack.png": "/react-gh-pages/static/media/Hack.d679c4386af3a5963696.png",
+    "static/media/HOTH.png": "/react-gh-pages/static/media/HOTH.afef127b2a5b663ac1dc.png",
+    "static/media/Rover.png": "/react-gh-pages/static/media/Rover.d156f073cbeccc001a04.png",
+    "static/media/Bruin_Odyssey.png": "/react-gh-pages/static/media/Bruin_Odyssey.d05463cf6f003a211a36.png",
+    "static/media/CNC_Machine_Monitor.png": "/react-gh-pages/static/media/CNC_Machine_Monitor.7404a9b1f7ce915f3df7.png",
+    "static/media/JamesWu_Resume.pdf": "/react-gh-pages/static/media/JamesWu_Resume.f2b19c6a07a60ccb1773.pdf",
+    "static/media/Headshot.jpg": "/react-gh-pages/static/media/Headshot.88776f2743f5420837d3.jpg",
+    "index.html": "/react-gh-pages/index.html",
+    "main.b497c2fb.css.map": "/react-gh-pages/static/css/main.b497c2fb.css.map",
+    "main.17ed7bff.js.map": "/react-gh-pages/static/js/main.17ed7bff.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b497c2fb.css",
+    "static/js/main.17ed7bff.js"
+  ]
+}
