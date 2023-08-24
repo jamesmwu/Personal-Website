@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Headshot from '../img/Headshot.jpg';
+import Headshot from '../img/LinkedIn_White.png';
 import '../styles/Home.css';
 import StylizedButton from '../components/StylizedButton';
 import Resume from '../data/JamesWu_Resume.pdf';
