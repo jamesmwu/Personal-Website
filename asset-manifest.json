@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.a543c71f.css",
-    "main.js": "/static/js/main.8f3e04e1.js",
+    "main.js": "/static/js/main.ca1d393c.js",
     "static/media/Hack.png": "/static/media/Hack.d679c4386af3a5963696.png",
     "static/media/HOTH.png": "/static/media/HOTH.afef127b2a5b663ac1dc.png",
     "static/media/Rover.png": "/static/media/Rover.d156f073cbeccc001a04.png",
     "static/media/Bruin_Odyssey.png": "/static/media/Bruin_Odyssey.d05463cf6f003a211a36.png",
     "static/media/CNC_Machine_Monitor.png": "/static/media/CNC_Machine_Monitor.7404a9b1f7ce915f3df7.png",
-    "static/media/JamesWu_Resume.pdf": "/static/media/JamesWu_Resume.f2b19c6a07a60ccb1773.pdf",
+    "static/media/JamesWu_Resume.pdf": "/static/media/JamesWu_Resume.88d5e6ffa0e7e753f769.pdf",
     "static/media/Headshot.jpg": "/static/media/Headshot.88776f2743f5420837d3.jpg",
     "index.html": "/index.html",
     "main.a543c71f.css.map": "/static/css/main.a543c71f.css.map",
-    "main.8f3e04e1.js.map": "/static/js/main.8f3e04e1.js.map"
+    "main.ca1d393c.js.map": "/static/js/main.ca1d393c.js.map"
   },
   "entrypoints": [
     "static/css/main.a543c71f.css",
-    "static/js/main.8f3e04e1.js"
+    "static/js/main.ca1d393c.js"
   ]
 }
