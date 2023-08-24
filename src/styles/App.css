@@ -2,6 +2,7 @@
 
 * {
 	font-family: Poppins;
+	box-sizing: border-box;
 }
 
 :root {
@@ -11,6 +12,10 @@
 	--speed: 500ms;
 	--yellow: #ffc107;
 	--red: #e91e63;
+	--switches-bg-color: goldenrod;
+	--switches-label-color: white;
+	--switch-bg-color: white;
+	--switch-text-color: goldenrod;
 }
 
 body {

@@ -1,9 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/navBar.css';
-import PFP from '../img/PFP.png';
 
-function NavBar() {
+function NavBar({ toggle, setToggle }) {
 	const [open, setOpen] = useState(false);
 	const toggleHamburger = () => {
 		setOpen(!open);
@@ -11,7 +10,33 @@ function NavBar() {
 
 	return (
 		<div className='navigation'>
-			<h1>Radio dial</h1>
+			<div class='switches-container'>
+				<input
+					type='radio'
+					id='switchMonthly'
+					name='switchPlan'
+					value='Monthly'
+					checked={!toggle}
+					onChange={() => setToggle(false)}
+				/>
+				<input
+					type='radio'
+					id='switchYearly'
+					name='switchPlan'
+					value='Yearly'
+					checked={toggle}
+					onChange={() => setToggle(true)}
+				/>
+				<label htmlFor='switchMonthly'>Work</label>
+				<label htmlFor='switchYearly'>Fun</label>
+				<div class='switch-wrapper'>
+					<div class='switch'>
+						<div>Work</div>
+						<div>Fun</div>
+					</div>
+				</div>
+			</div>
+
 			<div>
 				<div id='hamburger-container'>
 					<div
@@ -48,15 +73,6 @@ function NavBar() {
 					</ul>
 				</div>
 			</div>
-
-			{/* <nav>
-        <Link className='navLinks' to='/'>
-          Home
-        </Link>
-        <Link className='navLinks' to='/about'>
-          About
-        </Link>
-      </nav> */}
 		</div>
 	);
 }
