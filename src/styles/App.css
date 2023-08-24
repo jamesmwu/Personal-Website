@@ -8,12 +8,23 @@
 	/* --darkBlue: rgb(0, 56, 95);
 	--lightBlue: rgb(0, 174, 255);
 	--cream: rgb(239, 242, 192); */
-	--white: rgb(242, 242, 242);
+	--black: rgb(0, 56, 95);
+	--backgroundWhite: rgb(242, 242, 242);
+	--gray: #cecece;
+	--speed: 500ms;
 }
 
 body {
+	color: var(--black);
 	margin: 0;
-	background-color: var(--white);
+	background-color: var(--backgroundWhite);
+}
+
+#app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 #content {
@@ -21,8 +32,4 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-}
-
-h1 {
-	color: var(--lightBlue);
 }

@@ -24,39 +24,7 @@ function Home() {
 
   return (
     <div>
-      <div className='intro'>
-        <img src={Headshot} alt='James Wu profile' />
-        <div className='bio'>
-          <h1>James Wu</h1>
-          <p>
-            Hi! Thanks for checking out my website :&#41; <br />
-            Feel free to find more info about me and my projects here!
-          </p>
-        </div>
-      </div>
-      <h1>About</h1>
-      <p>
-        I'm an undergraduate computer science student at UCLA that is passionate
-        about technology and its applications! Currently I have the most
-        experience in full stack web and mobile development, but I'm exploring
-        other fields such as AI and cybersecurity.
-        <br />
-        Feel free to reach out, I'm always open to opportunities!
-      </p>
-      <div className='aboutBtns'>
-        <StylizedButton text={'Resume'} link={Resume} />
-        <StylizedButton text={'LinkedIn'} link={LinkedIn} />
-        <StylizedButton text={'GitHub'} link={GitHub} />
-        <StylizedButton
-          text={'Fun Facts'}
-          action={() => {
-            if (facts >= funFacts.length) {
-              setFacts(1);
-            } else setFacts(facts + 1);
-          }}
-        />
-      </div>
-      <h4>{funFacts[facts]}</h4>
+      <h1>HOME</h1>
     </div>
   );
 }
