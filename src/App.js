@@ -9,22 +9,20 @@ import NavBar from './components/NavBar';
 import { Routes, Route } from 'react-router-dom';
 
 function App() {
-  return (
-    <div id='app'>
-      {/* Navigation */}
-      <NavBar />
+	return (
+		<div id='app'>
+			{/* Navigation */}
+			<NavBar />
 
-      {/* Routes */}
-      <div id='content'>
-        <Routes>
-          <Route path='' element={<Home />} />
-          <Route path='about' element={<About />} />
-          {/* <Route path='experience' element={<Experience />} />
+			{/* Routes */}
+			<Routes>
+				<Route path='' element={<Home />} />
+				<Route path='about' element={<About />} />
+				{/* <Route path='experience' element={<Experience />} />
           <Route path='organizations' element={<Organizations />} /> */}
-        </Routes>
-      </div>
-    </div>
-  );
+			</Routes>
+		</div>
+	);
 }
 
 export default App;

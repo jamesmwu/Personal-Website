@@ -5,13 +5,12 @@
 }
 
 :root {
-	/* --darkBlue: rgb(0, 56, 95);
-	--lightBlue: rgb(0, 174, 255);
-	--cream: rgb(239, 242, 192); */
 	--black: rgb(0, 56, 95);
 	--backgroundWhite: rgb(242, 242, 242);
 	--gray: #cecece;
 	--speed: 500ms;
+	--yellow: #ffc107;
+	--red: #e91e63;
 }
 
 body {
@@ -25,11 +24,5 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-}
-
-#content {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	padding: 0 300px;
 }

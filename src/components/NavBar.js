@@ -11,10 +11,9 @@ function NavBar() {
 
 	return (
 		<div className='navigation'>
-			<img id='pfp' src={PFP} alt='MS-Paint drawn profile picture of James' />
 			<h1>Radio dial</h1>
 			<div>
-				<div id='menu-container'>
+				<div id='hamburger-container'>
 					<div
 						id='hamburger'
 						className={open ? 'open' : ''}

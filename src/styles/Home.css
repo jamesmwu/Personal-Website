@@ -1,4 +1,4 @@
-.intro {
+/* .intro {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -29,4 +29,25 @@
   display: flex;
   max-width: 45rem;
   justify-content: space-between;
+} */
+
+#homePage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+#heroText {
+	background: linear-gradient(to right, var(--yellow), var(--red));
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	font-size: 60px;
+	font-weight: bold;
+}
+
+#homePage p {
+	font-size: 22px;
 }
