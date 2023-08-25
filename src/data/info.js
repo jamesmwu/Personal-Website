@@ -1,7 +1,6 @@
 export const LinkedIn = 'https://www.linkedin.com/in/james-wu/';
 export const GitHub = 'https://github.com/jamesmwu';
 export const funFacts = [
-	'',
 	'Some of my hobbies include playing basketball, working out, drawing, and playing violin!',
 	"I'm mildly red-green colorblind. Upon hearing this, most people point to the nearest red object and ask me what color it is.",
 	"I love public speaking, and have participated in mock trial as well as advanced two levels through the International Rotary 4-Way Test speech competition. I've also presented a Ted Talk before about handling criticism.",

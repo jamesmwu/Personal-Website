@@ -1,25 +1,34 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
+import { funFacts } from '../data/info';
 import 'react-toastify/dist/ReactToastify.css';
 import '../styles/NavBar.css';
 
 function NavBar({ toggle, setToggle }) {
 	const customBackgroundClass = 'custom-toast-background';
 	const customProgressBarClass = 'custom-progress-bar';
+	const customSpacingClass = 'custom-toast-spacing';
 
-	const notify = () =>
-		toast.info('🦄 Wow so easy!', {
+	const notify = () => {
+		toast.info(funFacts[funIdx], {
 			position: 'bottom-right',
 			autoClose: 5000,
 			hideProgressBar: false,
 			closeOnClick: true,
 			pauseOnHover: false,
 			draggable: true,
-			className: `${customBackgroundClass} ${customProgressBarClass}`,
+			className: `${customBackgroundClass} ${customProgressBarClass} ${customSpacingClass}`,
 			theme: 'colored'
 		});
+		if (funIdx === funFacts.length - 1) {
+			setFunIdx(0);
+		} else {
+			setFunIdx(funIdx + 1);
+		}
+	};
 	const [open, setOpen] = useState(false);
+	const [funIdx, setFunIdx] = useState(0);
 	const toggleHamburger = () => {
 		setOpen(!open);
 	};

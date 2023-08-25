@@ -273,9 +273,20 @@
 /* Custom background color */
 .custom-toast-background.Toastify__toast {
 	background-color: var(--red);
+	text-align: left;
 }
 
 /* Custom progress bar color */
 .custom-progress-bar .Toastify__progress-bar {
 	background-color: white;
+}
+
+/* Custom spacing between icon and text */
+.custom-toast-spacing .Toastify__toast-body {
+	display: flex;
+	align-items: center;
+}
+
+.custom-toast-spacing .Toastify__toast-body .Toastify__toast-icon {
+	margin-right: 15px;
 }
