@@ -11,27 +11,30 @@ function NavBar({ toggle, setToggle }) {
 	return (
 		<div className='navAnchor'>
 			<div className='navigation'>
-				<div className='switches-container'>
-					<input
-						type='radio'
-						id='switchWork'
-						checked={!toggle}
-						onChange={() => setToggle(false)}
-					/>
-					<input
-						type='radio'
-						id='switchFun'
-						checked={toggle}
-						onChange={() => setToggle(true)}
-					/>
-					<label htmlFor='switchWork'>Work</label>
-					<label htmlFor='switchFun'>Fun</label>
-					<div className='switch-wrapper'>
-						<div className='switch'>
-							<div>Work</div>
-							<div>Fun</div>
+				<div className='interactive'>
+					<div className='switches-container'>
+						<input
+							type='radio'
+							id='switchWork'
+							checked={!toggle}
+							onChange={() => setToggle(false)}
+						/>
+						<input
+							type='radio'
+							id='switchFun'
+							checked={toggle}
+							onChange={() => setToggle(true)}
+						/>
+						<label htmlFor='switchWork'>Work</label>
+						<label htmlFor='switchFun'>Fun</label>
+						<div className='switch-wrapper'>
+							<div className='switch'>
+								<div>Work</div>
+								<div>Fun</div>
+							</div>
 						</div>
 					</div>
+					<button className='funFact'>!</button>
 				</div>
 
 				<div>

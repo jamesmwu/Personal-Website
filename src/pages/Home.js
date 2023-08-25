@@ -59,9 +59,6 @@ function Fun({ fadeIn }) {
 					<br />
 					<br />
 					But most of all, I'm super employable.
-					<br />
-					<br />
-					If you want an awesome employee, you've come to the right place.
 				</p>
 			</div>
 			<div className='experiences'>

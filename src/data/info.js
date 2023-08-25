@@ -15,7 +15,7 @@ export const funFacts = [
 
 export const experiences = [
 	{
-		title: 'ACM Hack',
+		title: 'UCLA ACM Hack',
 		role: 'President',
 		orgDescription:
 			'We are an internationally recognized student-run organization that empowers our community to build amazing things through code.',

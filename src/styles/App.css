@@ -13,10 +13,11 @@
 	--speed: 500ms;
 	--yellow: #ffc107;
 	--red: #e91e63;
+	--redAccent: #c0174f;
 	--switches-bg-color: var(--yellow);
 	--switches-label-color: white;
 	--switch-bg-color: white;
-	--switch-text-color: goldenrod;
+	--switch-text-color: var(--black);
 }
 
 h1 {
