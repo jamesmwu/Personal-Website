@@ -43,3 +43,44 @@ export const experiences = [
 		points: ['React Native']
 	}
 ];
+
+export const projects = [
+	{
+		title: 'Pathfinder',
+		role: 'Cofounder',
+		orgDescription:
+			'Pathfinder is a social network meant to connect students unsure about their career paths with experienced mentors.',
+		description: '',
+		website: 'https://pathfinder-network.com/'
+	},
+	{
+		title: 'ACM Hack Website',
+		role: 'Hack Dev Team',
+		orgDescription: 'hack desc',
+		description: '',
+		website: 'https://hack.uclaacm.com/'
+	},
+	{
+		title: 'Bruin Odyssey',
+		role: 'Hack Dev Team',
+		orgDescription: 'bruin odyssey desc',
+		description: '',
+		website: 'https://bruinodyssey.uclaacm.com/'
+	},
+	{
+		title: 'Autonomous Rover "Jimmy"',
+		role: 'ENGR 96A Project',
+		orgDescription: 'Jimmy desc',
+		description: '',
+		website:
+			'https://drive.google.com/file/d/1xpaB1gpdHcrj2WzBDVi211XRWmGpyxal/view'
+	},
+	{
+		title: 'Taigi',
+		role: 'Congressional App Challenge',
+		orgDescription: 'taigi desc',
+		description: '',
+		website:
+			'https://play.google.com/store/apps/details?id=com.taigipog.taiwaneseappv1&hl=en_US&gl=US'
+	}
+];

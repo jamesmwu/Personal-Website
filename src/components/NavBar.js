@@ -95,6 +95,7 @@ function NavBar({ toggle, setToggle }) {
 								to='/'
 								onClick={() => {
 									setOpen(!open);
+									setToggle(false);
 								}}
 							>
 								<li className='dropdown-item'>Home</li>

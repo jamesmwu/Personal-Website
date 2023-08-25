@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { experiences } from '../data/info';
+import { experiences, projects } from '../data/info';
 import Card from '../components/Card';
 import '../styles/Home.css';
 
@@ -30,6 +30,7 @@ function Work({ fadeIn }) {
 				</p>
 			</div>
 			<div className='experiences'>
+				<h2>Experiences</h2>
 				{experiences.map((exp, index) => {
 					return (
 						<Card
@@ -62,7 +63,8 @@ function Fun({ fadeIn }) {
 				</p>
 			</div>
 			<div className='experiences'>
-				{experiences.map((exp, index) => {
+				<h2>Projects</h2>
+				{projects.map((exp, index) => {
 					return (
 						<Card
 							key={index}
