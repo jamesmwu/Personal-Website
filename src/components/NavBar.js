@@ -13,7 +13,7 @@ function NavBar({ toggle, setToggle }) {
 	const notify = () => {
 		toast.info(funFacts[funIdx], {
 			position: 'bottom-right',
-			autoClose: 5000,
+			autoClose: 6000,
 			hideProgressBar: false,
 			closeOnClick: true,
 			pauseOnHover: false,
