@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
+import { experiences } from '../data/info';
+import Card from '../components/Card';
 import '../styles/Home.css';
 
 function Home({ toggle }) {
 	const [fadeIn, setFadeIn] = useState(false);
 
 	useEffect(() => {
-		setTimeout(function () {}, 10000);
 		const fadeInTimeout = setTimeout(() => {
 			setFadeIn((fadeIn) => !fadeIn);
-		}, 300);
-		setTimeout(function () {}, 10000);
+		}, 800);
 
 		return () => clearTimeout(fadeInTimeout);
 	}, [toggle]);
@@ -27,6 +27,21 @@ function Work({ fadeIn }) {
 				Hi there! I'm currently a junior studying computer science at UCLA.
 				Welcome to my website, enjoy your stay :)
 			</p>
+			<div className='experiences'>
+				{experiences.map((exp, index) => {
+					return (
+						<Card
+							key={index}
+							title={exp.title}
+							role={exp.role}
+							orgDescription={exp.orgDescription}
+							description={exp.description}
+							website={exp.website}
+							points={exp.points}
+						/>
+					);
+				})}
+			</div>
 		</div>
 	);
 }
@@ -45,6 +60,21 @@ function Fun({ fadeIn }) {
 				<br />
 				If you want an awesome employee, you've come to the right place.
 			</p>
+			<div className='experiences'>
+				{experiences.map((exp, index) => {
+					return (
+						<Card
+							key={index}
+							title={exp.title}
+							role={exp.role}
+							orgDescription={exp.orgDescription}
+							description={exp.description}
+							website={exp.website}
+							points={exp.points}
+						/>
+					);
+				})}
+			</div>
 		</div>
 	);
 }
