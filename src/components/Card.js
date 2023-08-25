@@ -18,7 +18,6 @@ export default function Card({
 					<h2 className='card-title'>{title}</h2>
 					<p className='card-role'>{role}</p>
 					<p className='card-org-description'>{orgDescription}</p>
-					{/* <p className='card-description'>{description}</p> */}
 					<a
 						className='card-website'
 						href={website}

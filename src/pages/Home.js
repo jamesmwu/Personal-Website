@@ -22,11 +22,13 @@ function Home({ toggle }) {
 function Work({ fadeIn }) {
 	return (
 		<div id='homePage' className={fadeIn ? 'fade-in' : 'fade-out'}>
-			<h1 id='heroTextWork'>James Wu</h1>
-			<p>
-				Hi there! I'm currently a junior studying computer science at UCLA.
-				Welcome to my website, enjoy your stay :)
-			</p>
+			<div className='homeBio'>
+				<h1 id='heroTextWork'>James Wu</h1>
+				<p>
+					Hi there! I'm currently a junior studying computer science at UCLA.
+					Welcome to my website, enjoy your stay :)
+				</p>
+			</div>
 			<div className='experiences'>
 				{experiences.map((exp, index) => {
 					return (

@@ -7,7 +7,6 @@
 	opacity: 0;
 	transition: opacity 0.5s ease-in-out;
 	text-align: left;
-	margin-top: 40px;
 }
 
 #homePage.fade-in {
@@ -48,5 +47,11 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+}
+
+.homeBio {
 	margin: 100px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
