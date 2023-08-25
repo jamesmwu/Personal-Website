@@ -18,13 +18,8 @@ export default function Card({
 					<h2 className='card-title'>{title}</h2>
 					<p className='card-role'>{role}</p>
 					<p className='card-org-description'>{orgDescription}</p>
-					<a
-						className='card-website'
-						href={website}
-						target='_blank'
-						rel='noopener noreferrer'
-					>
-						Visit Website
+					<a href={website} target='_blank' rel='noopener noreferrer'>
+						<button className='card-website'>Read More</button>
 					</a>
 				</div>
 				<div className='card-image'>

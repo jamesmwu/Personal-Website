@@ -2,10 +2,11 @@
 	background-color: white;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	border-radius: 8px;
-	padding: 20px 40px;
+	padding: 40px;
 	margin: 20px;
 	width: 100%;
 	transition: transform 0.3s, box-shadow 0.3s;
+	cursor: pointer;
 }
 
 .card:hover {
@@ -50,11 +51,27 @@
 }
 
 .card-website {
-	display: inline-block;
-	margin-top: 10px;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 4px;
 	font-size: 16px;
-	color: #007bff;
-	text-decoration: none;
+	cursor: pointer;
+	background: linear-gradient(
+		to right,
+		var(--yellow) 0%,
+		var(--yellow) 50%,
+		var(--red) 50%,
+		var(--red) 100%
+	);
+	background-size: 200% 100%;
+	background-position: right bottom;
+	transition: background-position 0.3s ease, color 0.3s ease;
+	color: white;
+}
+
+.card-website:hover {
+	background-position: left bottom;
+	color: white;
 }
 
 .card-image img {

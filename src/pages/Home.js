@@ -51,17 +51,19 @@ function Work({ fadeIn }) {
 function Fun({ fadeIn }) {
 	return (
 		<div id='homePage' className={!fadeIn ? 'fade-in' : 'fade-out'}>
-			<h1 id='heroText'>Yo I'm James</h1>
-			<p>
-				I am many things. A Smash bros enthusiast, a violinist, an academic
-				weapon, and a mediocre artist.
-				<br />
-				<br />
-				But most of all, I'm super employable.
-				<br />
-				<br />
-				If you want an awesome employee, you've come to the right place.
-			</p>
+			<div className='homeBio'>
+				<h1 id='heroText'>Yo I'm James</h1>
+				<p>
+					I am many things. A Smash bros enthusiast, a violinist, an academic
+					weapon, and a mediocre artist.
+					<br />
+					<br />
+					But most of all, I'm super employable.
+					<br />
+					<br />
+					If you want an awesome employee, you've come to the right place.
+				</p>
+			</div>
 			<div className='experiences'>
 				{experiences.map((exp, index) => {
 					return (
