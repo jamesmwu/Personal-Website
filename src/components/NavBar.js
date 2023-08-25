@@ -1,8 +1,24 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import '../styles/NavBar.css';
 
 function NavBar({ toggle, setToggle }) {
+	const customBackgroundClass = 'custom-toast-background';
+	const customProgressBarClass = 'custom-progress-bar';
+
+	const notify = () =>
+		toast.info('🦄 Wow so easy!', {
+			position: 'bottom-right',
+			autoClose: 5000,
+			hideProgressBar: false,
+			closeOnClick: true,
+			pauseOnHover: false,
+			draggable: true,
+			className: `${customBackgroundClass} ${customProgressBarClass}`,
+			theme: 'colored'
+		});
 	const [open, setOpen] = useState(false);
 	const toggleHamburger = () => {
 		setOpen(!open);
@@ -34,7 +50,20 @@ function NavBar({ toggle, setToggle }) {
 							</div>
 						</div>
 					</div>
-					<button className='funFact'>!</button>
+					<button className='funFact' onClick={notify}>
+						!
+					</button>
+					<ToastContainer
+						position='bottom-right'
+						autoClose={5000}
+						hideProgressBar={false}
+						newestOnTop={false}
+						closeOnClick
+						rtl={false}
+						draggable
+						pauseOnHover
+						theme='colored'
+					/>
 				</div>
 
 				<div>

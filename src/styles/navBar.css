@@ -269,3 +269,13 @@
 	div:nth-of-type(2) {
 	opacity: 1;
 }
+
+/* Custom background color */
+.custom-toast-background.Toastify__toast {
+	background-color: var(--red);
+}
+
+/* Custom progress bar color */
+.custom-progress-bar .Toastify__progress-bar {
+	background-color: white;
+}
