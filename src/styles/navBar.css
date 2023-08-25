@@ -1,13 +1,24 @@
 /* NavBar */
-.navigation {
+.navAnchor {
+	top: 0px;
 	text-align: center;
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
 	align-items: center;
-	margin-top: 70px;
 	position: sticky;
 	z-index: 1;
+	background-color: var(--backgroundWhite);
+	padding: 0 250px 10px;
+}
+
+.navigation {
+	margin-top: 30px;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	align-items: center;
 }
 
 #menu-container {

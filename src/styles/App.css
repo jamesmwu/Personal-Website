@@ -34,5 +34,8 @@ body {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+
+#appBody {
 	padding: 0 250px;
 }

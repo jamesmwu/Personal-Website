@@ -14,12 +14,14 @@ function App() {
 			<NavBar toggle={toggle} setToggle={setToggle} />
 
 			{/* Routes */}
-			<Routes>
-				<Route path='' element={<Home toggle={toggle} />} />
-				<Route path='about' element={<About />} />
-				{/* <Route path='experience' element={<Experience />} />
+			<div id='appBody'>
+				<Routes>
+					<Route path='' element={<Home toggle={toggle} />} />
+					<Route path='about' element={<About />} />
+					{/* <Route path='experience' element={<Experience />} />
           <Route path='organizations' element={<Organizations />} /> */}
-			</Routes>
+				</Routes>
+			</div>
 		</div>
 	);
 }
