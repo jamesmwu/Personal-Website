@@ -4,6 +4,19 @@
 	align-items: center;
 	justify-content: center;
 	width: 100%;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+	text-align: left;
+}
+
+#homePage.fade-in {
+	opacity: 1;
+	transition: opacity 0.5s ease-in-out;
+}
+
+#homePage.fade-out {
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
 }
 
 #heroText {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/navBar.css';
 
@@ -10,27 +10,23 @@ function NavBar({ toggle, setToggle }) {
 
 	return (
 		<div className='navigation'>
-			<div class='switches-container'>
+			<div className='switches-container'>
 				<input
 					type='radio'
-					id='switchMonthly'
-					name='switchPlan'
-					value='Monthly'
+					id='switchWork'
 					checked={!toggle}
 					onChange={() => setToggle(false)}
 				/>
 				<input
 					type='radio'
-					id='switchYearly'
-					name='switchPlan'
-					value='Yearly'
+					id='switchFun'
 					checked={toggle}
 					onChange={() => setToggle(true)}
 				/>
-				<label htmlFor='switchMonthly'>Work</label>
-				<label htmlFor='switchYearly'>Fun</label>
-				<div class='switch-wrapper'>
-					<div class='switch'>
+				<label htmlFor='switchWork'>Work</label>
+				<label htmlFor='switchFun'>Fun</label>
+				<div className='switch-wrapper'>
+					<div className='switch'>
 						<div>Work</div>
 						<div>Fun</div>
 					</div>

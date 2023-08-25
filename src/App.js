@@ -3,8 +3,6 @@ import './styles/App.css';
 import './styles/Components.css';
 import Home from './pages/Home';
 import About from './pages/About';
-import Experience from './pages/Experience';
-import Organizations from './pages/Organizations';
 import NavBar from './components/NavBar';
 import { Routes, Route } from 'react-router-dom';
 
