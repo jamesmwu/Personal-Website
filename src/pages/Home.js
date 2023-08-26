@@ -67,7 +67,7 @@ function Work({ fadeIn }) {
 				})}
 			</div>
 			<div className='end'>
-				<EndCard />
+				<EndCard work={true} />
 			</div>
 		</div>
 	);
@@ -120,7 +120,7 @@ function Fun({ fadeIn }) {
 				})}
 			</div>
 			<div className='end'>
-				<EndCard />
+				<EndCard work={false} />
 			</div>
 		</div>
 	);

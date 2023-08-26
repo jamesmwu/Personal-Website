@@ -2,12 +2,13 @@ import React, { useState } from 'react';
 import '../styles/EndCard.css';
 import Tilt from 'react-parallax-tilt';
 import IRL_PFP from '../img/IRL_PFP.png';
+import Professional_PFP from '../img/Professional_PFP.png';
 import Resume from '../data/JamesWu_Resume.pdf';
 import 'react-toastify/dist/ReactToastify.css';
 import { toast } from 'react-toastify';
 import { toastWebsite } from '../data/info';
 
-export default function EndCard({ name, title, description }) {
+export default function EndCard({ work }) {
 	const customBackgroundClass = 'custom-toast-background';
 	const customProgressBarClass = 'custom-progress-bar';
 	const customSpacingClass = 'custom-toast-spacing';
@@ -39,15 +40,22 @@ export default function EndCard({ name, title, description }) {
 			tiltMaxAngleY={2}
 		>
 			<div className='container glass'>
-				<h1>Contacts and Stuff</h1>
+				{work ? <h1>Contact Me</h1> : <h1>Let's Chat!</h1>}
 				<div className='pfpWrapper'>
-					<img src={IRL_PFP} alt='IRL PFP' className='profile' />
-					<p>Me, enjoying a delicious meal.</p>
+					<img
+						src={work ? Professional_PFP : IRL_PFP}
+						alt='James Wu Profile'
+						className='profile'
+					/>
+					{work ? (
+						<p>Me, looking professional.</p>
+					) : (
+						<p>Me, enjoying a delicious meal.</p>
+					)}
 				</div>
 				<div className='textWrapper'>
 					<p>
-						That's the website! Hope you played around a bit and enjoyed, I
-						built it myself. The code is{' '}
+						That's the website! Hope you enjoyed, I built it myself. The code is{' '}
 						<a
 							href='https://github.com/jamesmwu/jamesmwu.github.io'
 							target='_blank'
