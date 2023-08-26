@@ -1,8 +1,6 @@
-/* .parentHome {
-	width: 100%;
-}
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 
-#homePage {
+#aboutPage {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -13,48 +11,21 @@
 	text-align: left;
 }
 
-#homePage.fade-in {
+#aboutPage.fade-in {
 	opacity: 1;
 	transition: opacity 0.5s ease-in-out;
 }
 
-#homePage.fade-out {
+#aboutPage.fade-out {
 	opacity: 0;
 	transition: opacity 0.5s ease-in-out;
 }
 
-#heroText {
-	background: linear-gradient(to right, var(--yellow), var(--red));
-	-webkit-background-clip: text;
-	background-clip: text;
-	color: transparent;
-	font-size: 60px;
-	font-weight: bold;
-	margin-bottom: 10px;
-}
-
-#heroTextWork {
-	background: linear-gradient(to right, var(--grayAccent), var(--black));
-	-webkit-background-clip: text;
-	background-clip: text;
-	color: transparent;
-	font-size: 60px;
-	font-weight: bold;
-	margin-bottom: 10px;
-}
-
-#homePage p {
+#heroDesc {
 	font-size: 22px;
 }
 
-.experiences {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 0 250px;
-}
-
-.homeBio {
+.aboutBio {
 	margin: 130px 0;
 	display: flex;
 	flex-direction: column;
@@ -63,19 +34,57 @@
 	padding: 0 250px;
 }
 
-.end {
-	background: linear-gradient(
-			to bottom,
-			var(--backgroundWhite) 0%,
-			transparent 100%
-		),
-		linear-gradient(to right, var(--red), var(--yellow));
-	background-size: 100% 70%, auto;
-	background-repeat: no-repeat;
+.aboutSection h3 {
+	font-size: 23px;
+	font-weight: bold;
+	margin: 10px 0 0;
+}
+
+.aboutSection p {
+	font-size: 18px;
+	margin: 10px 0 30px;
+}
+
+/* COLLAPSIBLE */
+
+.subSection {
+	margin: 30px 0;
+	border-bottom: 1px solid var(--black);
 	width: 100%;
+}
+
+.Collapsible {
+	border-top: 1px solid var(--black);
+	padding: 15px 10px;
+	background-color: white;
+}
+
+.Collapsible__contentInner {
+	margin: 20px 0;
+	font-size: 20px;
+}
+
+.Collapsible__trigger {
 	display: flex;
-	flex-direction: column;
+	font-weight: bold;
+	font-size: 22px;
+	justify-content: space-between;
 	align-items: center;
-	justify-content: center;
-	height: 1000px;
-} */
+	text-decoration: none;
+	position: relative;
+	color: var(--black);
+	cursor: pointer;
+}
+
+.Collapsible__trigger:after {
+	font-family: 'Material Icons';
+	font-size: 30px;
+	color: var(--red);
+	content: 'expand_more';
+	display: block;
+	transition: transform 200ms;
+}
+
+.Collapsible__trigger.is-open:after {
+	transform: rotateZ(180deg);
+}
