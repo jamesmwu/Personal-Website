@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { experiences, projects } from '../data/info';
+import { experiences, projects, testimonials } from '../data/info';
 import Card from '../components/Card';
+import EndCard from '../components/EndCard';
 import '../styles/Home.css';
 
 function Home({ toggle }) {
@@ -15,7 +16,9 @@ function Home({ toggle }) {
 	}, [toggle]);
 
 	return (
-		<div>{toggle ? <Fun fadeIn={fadeIn} /> : <Work fadeIn={fadeIn} />}</div>
+		<div className='parentHome'>
+			{toggle ? <Fun fadeIn={fadeIn} /> : <Work fadeIn={fadeIn} />}
+		</div>
 	);
 }
 
@@ -44,6 +47,9 @@ function Work({ fadeIn }) {
 						/>
 					);
 				})}
+			</div>
+			<div className='end'>
+				<EndCard />
 			</div>
 		</div>
 	);

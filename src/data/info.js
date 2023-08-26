@@ -84,3 +84,11 @@ export const projects = [
 			'https://play.google.com/store/apps/details?id=com.taigipog.taiwaneseappv1&hl=en_US&gl=US'
 	}
 ];
+
+export const testimonials = [
+	{
+		name: 'Katelyn Yu',
+		title: 'Hack Dev Team Lead',
+		description: "He's alright, I guess."
+	}
+];
