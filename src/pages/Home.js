@@ -26,6 +26,23 @@ function Work({ fadeIn }) {
 	return (
 		<div id='homePage' className={fadeIn ? 'fade-in' : 'fade-out'}>
 			<div className='homeBio'>
+				<ul class='background'>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+
 				<h1 id='heroTextWork'>James Wu</h1>
 				<p>
 					Hi there! I'm currently a junior studying computer science at UCLA.
@@ -60,6 +77,22 @@ function Fun({ fadeIn }) {
 	return (
 		<div id='homePage' className={!fadeIn ? 'fade-in' : 'fade-out'}>
 			<div className='homeBio'>
+				<ul class='background'>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
 				<h1 id='heroText'>Yo I'm James</h1>
 				<p>
 					I am many things. A Smash bros enthusiast, a violinist, an academic
