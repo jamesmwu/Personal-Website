@@ -47,8 +47,15 @@ export default function EndCard({ name, title, description }) {
 				<div className='textWrapper'>
 					<p>
 						That's the website! Hope you played around a bit and enjoyed, I
-						built it myself. The code is open-source if you'd like to take a
-						look.
+						built it myself. The code is{' '}
+						<a
+							href='https://github.com/jamesmwu/jamesmwu.github.io'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							open-source
+						</a>{' '}
+						if you'd like to take a look.
 					</p>
 					<p>I'm always open to chatting, so feel free to send me a message!</p>
 				</div>

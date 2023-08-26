@@ -35,6 +35,7 @@
 
 .funFact:hover {
 	background-color: var(--redAccent);
+	transform: scale(1.05);
 }
 
 .navigation {
@@ -74,7 +75,7 @@
 	visibility: visible;
 	transform: translateY(0);
 	transition: var(--speed) ease;
-	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add box shadow on hover */
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .dropdown-menu.inactive {
@@ -101,6 +102,11 @@
 /* Hamburger */
 #hamburger-container {
 	cursor: pointer;
+	transition: var(--speed) ease;
+}
+
+#hamburger-container:hover {
+	transform: scale(1.05);
 }
 
 #hamburger {
@@ -188,6 +194,11 @@
 	background: var(--switches-bg-color);
 	line-height: 3rem;
 	border-radius: 3rem;
+	transition: var(--speed) ease;
+}
+
+.switches-container:hover {
+	transform: scale(1.05);
 }
 
 /* input (radio) for toggling. hidden - use labels for clicking on */
@@ -205,6 +216,11 @@
 	text-align: center;
 	cursor: pointer;
 	color: var(--switches-label-color);
+	transition: var(--speed) ease;
+}
+
+.switches-container label:hover {
+	color: #e0e0e0;
 }
 
 /* switch highlighters wrapper (sliding left / right) 
