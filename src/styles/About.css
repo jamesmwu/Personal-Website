@@ -9,6 +9,7 @@
 	opacity: 0;
 	transition: opacity 0.5s ease-in-out;
 	text-align: left;
+	margin: 60px 0;
 }
 
 #aboutPage.fade-in {
@@ -26,7 +27,6 @@
 }
 
 .aboutBio {
-	margin: 130px 0;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -34,15 +34,46 @@
 	padding: 0 250px;
 }
 
-.aboutSection h3 {
-	font-size: 23px;
-	font-weight: bold;
-	margin: 10px 0 0;
+.imageContainer {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
 }
 
-.aboutSection p {
-	font-size: 18px;
-	margin: 10px 0 30px;
+.imageWrapper {
+	width: 20%;
+	height: auto;
+	position: relative;
+	transition: transform 0.3s, filter 0.3s;
+}
+
+.imageWrapper.larger {
+	width: 20%;
+	z-index: 1;
+	transform: translateY(-50px);
+}
+
+.imageWrapper.left {
+	transform: translateX(30px);
+	width: 15%;
+}
+
+.imageWrapper.right {
+	transform: translateX(-30px);
+	width: 15%;
+}
+
+.imageWrapper img {
+	width: 100%;
+	height: auto;
+	display: block;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+}
+
+.imageWrapper:hover {
+	filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.3));
+	transform: scale(1.05);
 }
 
 /* COLLAPSIBLE */
