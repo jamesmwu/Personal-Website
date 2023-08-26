@@ -36,8 +36,8 @@ export default function EndCard({ work }) {
 		<Tilt
 			tiltReverse={true}
 			className='tiltContainer'
-			tiltMaxAngleX={2}
-			tiltMaxAngleY={2}
+			tiltMaxAngleX={3.5}
+			tiltMaxAngleY={3.5}
 		>
 			<div className='container glass'>
 				{work ? <h1>Contact Me</h1> : <h1>Let's Chat!</h1>}

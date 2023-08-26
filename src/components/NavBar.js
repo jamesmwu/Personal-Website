@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import { funFacts } from '../data/info';
@@ -10,6 +10,19 @@ function NavBar({ toggle, setToggle }) {
 	const customBackgroundClass = 'custom-toast-background';
 	const customProgressBarClass = 'custom-progress-bar';
 	const customSpacingClass = 'custom-toast-spacing';
+
+	const [clickCooldown, setClickCooldown] = useState(false);
+	const clickCooldownTimeout = useRef(null);
+
+	const toggleAfterCooldown = (value) => {
+		if (!clickCooldown) {
+			setToggle(value);
+			setClickCooldown(true);
+			clickCooldownTimeout.current = setTimeout(() => {
+				setClickCooldown(false);
+			}, 1000);
+		}
+	};
 
 	const notify = () => {
 		toast.info(funFacts[funIdx], {
@@ -47,13 +60,13 @@ function NavBar({ toggle, setToggle }) {
 							type='radio'
 							id='switchWork'
 							checked={!toggle}
-							onChange={() => setToggle(false)}
+							onChange={() => toggleAfterCooldown(false)}
 						/>
 						<input
 							type='radio'
 							id='switchFun'
 							checked={toggle}
-							onChange={() => setToggle(true)}
+							onChange={() => toggleAfterCooldown(true)}
 						/>
 						<label htmlFor='switchWork'>Work</label>
 						<label htmlFor='switchFun'>Fun</label>
