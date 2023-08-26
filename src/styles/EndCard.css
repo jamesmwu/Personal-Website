@@ -1,11 +1,18 @@
+.tiltContainer {
+	width: 80%;
+}
+
 .container {
 	width: 50%;
-	height: 500px;
+	/* height: 700px; */
 	margin: 200px auto 80px;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+}
+
+.container p {
+	font-size: 20px !important;
 }
 
 .glass {
@@ -22,30 +29,35 @@
 	text-align: left;
 }
 
-.review {
-	margin-left: 80px;
+.profile {
+	width: 200px;
+	border-radius: 20px;
+	box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
 }
 
-.testimonial-image {
-	width: 150px;
-	height: 150px;
-	border-radius: 50%;
-	margin-bottom: 10px;
+.pfpWrapper {
+	margin: 40px 0 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-.testimonial-name {
-	font-size: 24px;
-	margin: 0;
+.pfpWrapper p {
+	margin-top: 20px;
+	font-size: 15px !important;
 }
 
-.testimonial-title {
-	font-size: 18px;
-	opacity: 0.8;
-	margin: 0;
+.textWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: center;
+	margin-bottom: 40px;
 }
 
-.testimonial-description {
-	margin-top: 50px;
-	font-size: 16px;
-	opacity: 0.9;
+.buttonWrapper {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
 }

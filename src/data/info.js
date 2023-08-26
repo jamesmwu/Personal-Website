@@ -92,3 +92,18 @@ export const testimonials = [
 		description: "He's alright, I guess."
 	}
 ];
+
+export const toastWebsite = [
+	"You're here! Congrats!",
+	'This is the website!',
+	"Here's the link: https://jamesmwu.github.io/",
+	'I admire your persistence.',
+	"I'm flattered you enjoy pressing this button this much.",
+	"I don't know what you expected to find here.",
+	"Pressing this more isn't going to change anything.",
+	'You should probably get back to work.',
+	"You're really pressing my buttons!",
+	'Alright, this is the last unique popup. You can stop now.',
+	'Ha, curiosity got the better of you eh?',
+	'Jokes aside, I appreciate you checking this out. Thanks!'
+];

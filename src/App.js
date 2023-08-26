@@ -12,13 +12,12 @@ function App() {
 		<div id='app'>
 			{/* Navigation */}
 			<NavBar toggle={toggle} setToggle={setToggle} />
-			<Home toggle={toggle} />
 
 			{/* Routes */}
-			{/* <Routes>
+			<Routes>
 				<Route path='' element={<Home toggle={toggle} />} />
 				<Route path='about' element={<About />} />
-			</Routes> */}
+			</Routes>
 		</div>
 	);
 }

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { experiences, projects, testimonials } from '../data/info';
+import { experiences, projects } from '../data/info';
 import Card from '../components/Card';
 import EndCard from '../components/EndCard';
 import '../styles/Home.css';

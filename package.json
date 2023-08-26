@@ -15,6 +15,7 @@
     "react-feather": "^2.0.10",
     "react-notifications": "^1.7.4",
     "react-notifications-component": "^4.0.1",
+    "react-parallax-tilt": "^1.7.163",
     "react-router-dom": "^6.4.5",
     "react-scripts": "5.0.1",
     "react-spring": "^9.7.2",

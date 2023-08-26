@@ -1,4 +1,4 @@
-# James's website
+# James's Website
 
 Hello! Welcome to the README of my website. Whether you are a recruiter or a friend stalking me, I'm happy to have you here. Feel free to clone the repo and glance at at the code.
 
