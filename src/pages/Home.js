@@ -26,7 +26,7 @@ function Work({ fadeIn }) {
 	return (
 		<div id='homePage' className={fadeIn ? 'fade-in' : 'fade-out'}>
 			<div className='homeBio'>
-				<ul class='background'>
+				<ul className='background'>
 					<li></li>
 					<li></li>
 					<li></li>
@@ -77,7 +77,7 @@ function Fun({ fadeIn }) {
 	return (
 		<div id='homePage' className={!fadeIn ? 'fade-in' : 'fade-out'}>
 			<div className='homeBio'>
-				<ul class='background'>
+				<ul className='background'>
 					<li></li>
 					<li></li>
 					<li></li>

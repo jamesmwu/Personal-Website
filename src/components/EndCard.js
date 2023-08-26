@@ -64,21 +64,31 @@ export default function EndCard({ name, title, description }) {
 						href='mailto:jamesw0462@gmail.com'
 						target='_blank'
 						rel='noopener noreferrer'
+						className='card-website-wrapper'
 					>
-						<button className='card-website'>Email</button>
+						<button className='card-website-end'>Email</button>
 					</a>
 					<a
 						href='https://www.linkedin.com/in/james-wu/'
 						target='_blank'
 						rel='noopener noreferrer'
+						className='card-website-wrapper'
 					>
-						<button className='card-website'>LinkedIn</button>
+						<button className='card-website-end'>LinkedIn</button>
 					</a>
-					<button className='card-website' onClick={notify}>
-						Website
-					</button>
-					<a href={Resume} target='_blank' rel='noopener noreferrer'>
-						<button className='card-website'>Resume</button>
+					<div className='card-website-wrapper'>
+						<button className='card-website-end' onClick={notify}>
+							Website
+						</button>
+					</div>
+
+					<a
+						href={Resume}
+						target='_blank'
+						rel='noopener noreferrer'
+						className='card-website-wrapper'
+					>
+						<button className='card-website-end'>Resume</button>
 					</a>
 				</div>
 			</div>

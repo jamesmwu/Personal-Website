@@ -1,6 +1,7 @@
 #parentLink {
 	text-decoration: none;
 	color: var(--black);
+	max-width: 1500px;
 }
 
 .card {

@@ -82,7 +82,25 @@
 
 @media (max-width: 1700px) {
 	.end {
-		height: 1100px;
+		height: 1200px;
+	}
+}
+
+@media (max-width: 1215px) {
+	.end {
+		height: 1300px;
+	}
+	.experiences {
+		padding: 0 50px;
+	}
+	.homeBio {
+		padding: 0 50px;
+	}
+}
+
+@media (max-width: 700px) {
+	.end {
+		height: 1500px;
 	}
 }
 

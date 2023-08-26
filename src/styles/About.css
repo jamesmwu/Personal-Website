@@ -36,6 +36,7 @@
 
 .imageContainer {
 	display: flex;
+	flex-direction: row;
 	justify-content: center;
 	margin-bottom: 50px;
 }
@@ -118,4 +119,48 @@
 
 .Collapsible__trigger.is-open:after {
 	transform: rotateZ(180deg);
+}
+
+@media (max-width: 1215px) {
+	.aboutBio {
+		padding: 0 50px;
+	}
+	.imageWrapper {
+		width: 40%;
+	}
+
+	.imageWrapper.larger {
+		width: 25%;
+	}
+
+	.imageWrapper.left {
+		width: 25%;
+	}
+
+	.imageWrapper.right {
+		width: 25%;
+	}
+}
+
+@media (max-width: 800px) {
+	.imageContainer {
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+		padding: 0;
+	}
+	.imageWrapper.larger {
+		width: 50%;
+		transform: translateY(0px);
+	}
+
+	.imageWrapper.left {
+		transform: translateX(-120px) translateY(50px);
+		width: 40%;
+	}
+
+	.imageWrapper.right {
+		transform: translateX(120px) translateY(-50px);
+		width: 40%;
+	}
 }
