@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { useSpring, a } from '@react-spring/web';
 import placeholder from '../img/PFP.png';
 import '../styles/Card.css';
 import Hack from '../img/Hack.png';
@@ -20,6 +21,12 @@ export default function Card({
 	expImg
 }) {
 	const [curImage, setCurImage] = useState(placeholder);
+	const [flipped, set] = useState(false);
+	const { transform, opacity } = useSpring({
+		opacity: flipped ? 1 : 0,
+		transform: `perspective(600px) rotateX(${flipped ? 180 : 0}deg)`,
+		config: { mass: 5, tension: 500, friction: 80 }
+	});
 
 	useEffect(() => {
 		if (expImg === 'Hack') {
@@ -42,20 +49,22 @@ export default function Card({
 	}, []);
 
 	return (
-		<div className='card'>
-			<div className='card-content'>
-				<div className='card-text'>
-					<h2 className='card-title'>{title}</h2>
-					<p className='card-role'>{role}</p>
-					<p className='card-org-description'>{orgDescription}</p>
-					<a href={website} target='_blank' rel='noopener noreferrer'>
-						<button className='card-website'>Link</button>
-					</a>
-				</div>
-				<div className='card-image'>
-					<img src={curImage} alt='Project' />
+		<a href={website} target='_blank' rel='noopener noreferrer' id='parentLink'>
+			<div className='card'>
+				<div className='card-content'>
+					<div className='card-text'>
+						<h2 className='card-title'>{title}</h2>
+						<p className='card-role'>{role}</p>
+						<p className='card-org-description'>{orgDescription}</p>
+						<a href={website} target='_blank' rel='noopener noreferrer'>
+							<button className='card-website'>Link</button>
+						</a>
+					</div>
+					<div className='card-image'>
+						<img src={curImage} alt='Project' />
+					</div>
 				</div>
 			</div>
-		</div>
+		</a>
 	);
 }

@@ -80,6 +80,12 @@
 	height: 1000px;
 }
 
+@media (max-width: 1700px) {
+	.end {
+		height: 1100px;
+	}
+}
+
 /* Squares */
 @keyframes animate {
 	0% {
