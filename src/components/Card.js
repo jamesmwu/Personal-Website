@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import placeholder from '../img/PFP.png';
 import '../styles/Card.css';
+import Hack from '../img/Hack.png';
+import Hussle from '../img/Hussle.png';
+import GrammaTech from '../img/GrammaTech.ico';
+import Pathfinder from '../img/Pathfinder.png';
+import HackWeb from '../img/HackWeb.png';
+import BruinOdyssey from '../img/BruinOdyssey.png';
+import Jimmy from '../img/Jimmy.png';
+import Taigi from '../img/Taigi.png';
 
 export default function Card({
 	title,
@@ -9,8 +17,30 @@ export default function Card({
 	description,
 	website,
 	points,
-	img
+	expImg
 }) {
+	const [curImage, setCurImage] = useState(placeholder);
+
+	useEffect(() => {
+		if (expImg === 'Hack') {
+			setCurImage(Hack);
+		} else if (expImg === 'Hussle') {
+			setCurImage(Hussle);
+		} else if (expImg === 'GrammaTech') {
+			setCurImage(GrammaTech);
+		} else if (expImg === 'Pathfinder') {
+			setCurImage(Pathfinder);
+		} else if (expImg === 'HackWeb') {
+			setCurImage(HackWeb);
+		} else if (expImg === 'BruinOdyssey') {
+			setCurImage(BruinOdyssey);
+		} else if (expImg === 'Jimmy') {
+			setCurImage(Jimmy);
+		} else if (expImg === 'Taigi') {
+			setCurImage(Taigi);
+		}
+	}, []);
+
 	return (
 		<div className='card'>
 			<div className='card-content'>
@@ -23,7 +53,7 @@ export default function Card({
 					</a>
 				</div>
 				<div className='card-image'>
-					<img src={placeholder} alt='Project' />
+					<img src={curImage} alt='Project' />
 				</div>
 			</div>
 		</div>

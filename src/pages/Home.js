@@ -44,6 +44,7 @@ function Work({ fadeIn }) {
 							description={exp.description}
 							website={exp.website}
 							points={exp.points}
+							expImg={exp.img}
 						/>
 					);
 				})}
@@ -80,6 +81,7 @@ function Fun({ fadeIn }) {
 							description={exp.description}
 							website={exp.website}
 							points={exp.points}
+							expImg={exp.img}
 						/>
 					);
 				})}

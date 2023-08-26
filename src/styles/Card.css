@@ -78,4 +78,6 @@
 	max-width: 200px;
 	height: auto;
 	object-fit: cover;
+	border-radius: 20px;
+	margin-left: 40px;
 }
