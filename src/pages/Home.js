@@ -84,6 +84,9 @@ function Fun({ fadeIn }) {
 					);
 				})}
 			</div>
+			<div className='end'>
+				<EndCard />
+			</div>
 		</div>
 	);
 }

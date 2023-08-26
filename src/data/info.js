@@ -56,21 +56,24 @@ export const projects = [
 	{
 		title: 'ACM Hack Website',
 		role: 'Hack Dev Team',
-		orgDescription: 'hack desc',
+		orgDescription:
+			'The offical website for UCLA ACM Hack, with information about our mission, team, and current/past events.',
 		description: '',
 		website: 'https://hack.uclaacm.com/'
 	},
 	{
 		title: 'Bruin Odyssey',
 		role: 'Hack Dev Team',
-		orgDescription: 'bruin odyssey desc',
+		orgDescription:
+			'A UCLA-wide coding puzzle series that ran throughout Fall 2022, with 100+ participants.',
 		description: '',
 		website: 'https://bruinodyssey.uclaacm.com/'
 	},
 	{
 		title: 'Autonomous Rover "Jimmy"',
 		role: 'ENGR 96A Project',
-		orgDescription: 'Jimmy desc',
+		orgDescription:
+			'Self-driving rover that can navigate a maze and avoid obstacles, built with Arduino.',
 		description: '',
 		website:
 			'https://drive.google.com/file/d/1xpaB1gpdHcrj2WzBDVi211XRWmGpyxal/view'
@@ -78,7 +81,8 @@ export const projects = [
 	{
 		title: 'Taigi',
 		role: 'Congressional App Challenge',
-		orgDescription: 'taigi desc',
+		orgDescription:
+			'A currently published mobile app for easy translation between English and Taiwanese, with 500+ downloads as of August 2023.',
 		description: '',
 		website:
 			'https://play.google.com/store/apps/details?id=com.taigipog.taiwaneseappv1&hl=en_US&gl=US'

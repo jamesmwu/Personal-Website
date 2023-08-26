@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import { funFacts } from '../data/info';
 import 'react-toastify/dist/ReactToastify.css';
 import '../styles/NavBar.css';
 
 function NavBar({ toggle, setToggle }) {
+	const location = useLocation();
 	const customBackgroundClass = 'custom-toast-background';
 	const customProgressBarClass = 'custom-progress-bar';
 	const customSpacingClass = 'custom-toast-spacing';
@@ -37,7 +38,11 @@ function NavBar({ toggle, setToggle }) {
 		<div className='navAnchor'>
 			<div className='navigation'>
 				<div className='interactive'>
-					<div className='switches-container'>
+					<div
+						className={`switches-container ${
+							location.pathname === '/about' ? 'switches-container-grayed' : ''
+						}`}
+					>
 						<input
 							type='radio'
 							id='switchWork'

@@ -197,7 +197,22 @@
 	transition: var(--speed) ease;
 }
 
+.switches-container-grayed {
+	background: var(--gray);
+	width: 200px;
+	position: relative;
+	display: flex;
+	padding: 0;
+	line-height: 3rem;
+	border-radius: 3rem;
+	transition: var(--speed) ease;
+}
+
 .switches-container:hover {
+	transform: scale(1.05);
+}
+
+.switches-container-grayed:hover {
 	transform: scale(1.05);
 }
 
