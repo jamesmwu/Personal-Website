@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import { funFacts } from '../data/info';
 import 'react-toastify/dist/ReactToastify.css';
-import '../styles/NavBar.css';
+import '../styles/navBar.css';
 
 function NavBar({ toggle, setToggle }) {
 	const location = useLocation();
