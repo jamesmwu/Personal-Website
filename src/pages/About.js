@@ -32,12 +32,15 @@ function About() {
 			</div>
 
 			<div className='aboutBio'>
-				<h1 id='heroText'>Hello! I'm James.</h1>
-				<p id='heroDesc'>
-					👋 Hello! I'm James, a CS Dean's Honors list student at UCLA with a
-					passion for software development. As an aspiring developer, I thrive
-					on creating innovative solutions and exploring new technologies.
-				</p>
+				<div className='aboutText'>
+					<h1 id='heroText'>Hello! I'm James.</h1>
+					<p id='heroDesc'>
+						👋 Hello! I'm James, a CS Dean's Honors list student at UCLA with a
+						passion for software development. As an aspiring developer, I thrive
+						on creating innovative solutions and exploring new technologies.
+					</p>
+				</div>
+
 				<div className='subSection'>
 					{aboutMe.map((info, index) => (
 						<Collapsible key={index} trigger={info.title}>
