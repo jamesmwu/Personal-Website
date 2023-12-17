@@ -159,21 +159,20 @@ export const aboutMe = [
 		description: [
 			'I consider myself a talkative introvert-- I love meeting new people and having conversations, but I also enjoy vibing on my own.',
 			"I have a couple ways of keeping myself mindlessly entertained. I follow the NBA (Lakers WOOO) and watch Minecraft videos. I also like playing Super Smash Bros Ultimate... my friends don't like playing with me anymore because I always beat them. But I like watching professional play and practicing the techniques they use, sometimes I'll even take notes for fun if I see something especially intriguing.",
-			'Some hobbies I think are probably more stimulating that I enjoy include reading, drawing, playing my violin, working out, and playing basketball. Regarding the reading point, I REALLY like learning about how businesses become successful, especially tech ones. I\'m currently reading "Trillion Dollar Coach", but some of my favorites include "Shoe Dog" by Phil Knight, "Unbroken" by Laura Hillenbrand, and "The Lord of the Rings" by J.R.R. Tolkien. Regarding the drawing point, I usually draw digital art, but I also like drawing on whiteboards... if that counts? For some reason I really enjoy drawing nature stuff that is devoid of people or human influence. So stuff like mountains, clouds, forests, etc. But I mostly just draw little doodles and more derpy looking stuff.',
+			'Some hobbies I think are probably more stimulating that I enjoy include reading, drawing, playing my violin, working out, and playing basketball. Regarding the reading point, I REALLY like learning about how businesses become successful, especially tech ones. Some of my favorites include "Shoe Dog" by Phil Knight, "Unbroken" by Laura Hillenbrand, and "The Lord of the Rings" by J.R.R. Tolkien. Regarding the drawing point, I usually draw digital art, but I also like drawing on whiteboards... if that counts? For some reason I really enjoy drawing nature stuff that is devoid of people or human influence. So stuff like mountains, clouds, forests, etc. But I mostly just draw little doodles and more derpy looking stuff.',
 			"My idea of fun is chilling comfortably with friends, playing board games or cards or just chatting. I feel like in college there tends to be more of a party scene, but it's never really been for me I think."
 		]
 	},
 	{
 		title: '💻 My Thoughts on CS:',
 		description: [
-			"It's ok.",
-			"Ha, but in seriousness, I immensely enjoy SWE for the practicality and creativity it offers. I think it's difficult to find any other profession where you can create something that can be used by thousands of people, all from one dude coding something in his bedroom. I was initially pursuing mechanical engineering, and I'll just say that it might be a little harder to solder something together or manufacture a car while sitting at your personal desk.",
+			"I immensely enjoy SWE for the practicality and creativity it offers. I think it's difficult to find any other profession where you can create something that can be used by thousands of people, all from one dude coding something in his bedroom. I was initially pursuing mechanical engineering, and I'll just say that it might be a little harder to solder something together or manufacture a car while sitting at your personal desk.",
 			"In addition to that, I really enjoy learning the actual concepts and processes involved in building software. I think it's fascinating to see how all the different parts of a program come together to create something that can be used by others.",
 			'My goal is to build something interesting and cool that will positively impact people, and I think SWE is a great way to do that.'
 		]
 	},
 	{
-		title: '📖 My Lore:',
+		title: '📖 My Background:',
 		description: [
 			'In elementary school, I was fascinated by the idea of creating new worlds and ideas that had never been seen before! So naturally, I wanted to be... an author. I enjoyed reading and I enjoyed writing, so it seemed like the perfect fit. I would frequently handwrite my stories and present the stapled bundles of paper for my parents to read.',
 			"Eventually, my aspirations shifted. In high school, I didn't know what I wanted to do and tried out every available opportunity. In addition to a variety of extracurriculars (violin, orchestra, basketball, cross country), I found myself getting into speech. I enjoyed debate, participated in mock trial, did some work for the school paper, won some speech competitions, and even gave a TEDx talk. I thought going into law or politics might be the move.",
