@@ -14,6 +14,17 @@ export const funFacts = [
 
 export const experiences = [
 	{
+		title: 'Arista Networks',
+		role: 'Incoming Software Engineering Intern',
+		orgDescription:
+			'I am an incoming software engineering intern at Arista Networks, a leading provider of cloud networking solutions for large data center and campus environments! Details coming soon :)',
+		description:
+			"During my internship, I took on the challenge of independently implementing a new feature to detect dynamically linked libraries (DLL) in customers' applications, providing vital insights into potential vulnerabilities. This feature was successfully deployed and is currently being used in production, delivering significant value to our customers. To complement this functionality, I built a responsive and accessible user interface, leveraging Angular.js and custom GraphQL queries. The interface incorporated sorting and filtering functionalities based on architecture, path, or platform, allowing users to analyze the results within the application efficiently. Additionally, I introduced a TypeScript service to detect window resize changes in the product dashboard, ensuring a seamless user experience across different screen dimensions. As part of optimizing the development process, I modified the configuration file code, resulting in a remarkable 94% improvement in development build times and reducing refresh speeds from 50 seconds to just 3 seconds.",
+		website: 'https://www.arista.com/en/',
+		points: ['Angular', 'TypeScript', 'GraphQL', 'Git'],
+		img: 'Arista'
+	},
+	{
 		title: 'UCLA ACM Hack',
 		role: 'President',
 		orgDescription:
@@ -51,9 +62,21 @@ export const experiences = [
 			'I developed various features, components, and screens for Hussle-- a UCLA startup allowing students to buy and sell items/services from a trusted source.',
 		description:
 			'During my software engineering internship, I successfully built the user interface of a mobile app using React Native. This involved creating multiple screens, implementing in-app navigation, and designing a user feed to display all available products. I also developed user authentication and post-saving functionality, leveraging Firebase for seamless data management. Through refactoring existing code, I optimized scalability and achieved efficiency gains, putting us three months ahead of schedule. Additionally, I explored natural language processing techniques and used TensorFlow to preprocess data for a sentiment analysis machine learning model. This boosted sentiment prediction accuracy by 30% and enabled effective flagging of inappropriate comments. Collaborating with graphic designers, application testers, and product management, we deployed the app on the iOS store within a tight timeframe of four months, ensuring a successful launch.',
-		website: 'https://www.hussle.us/',
+		website:
+			'https://apps.apple.com/us/app/hussle-local-college-gigs/id1573358782',
 		points: ['React Native', 'Git'],
 		img: 'Hussle'
+	},
+	{
+		title: 'DevX',
+		role: 'Software Engineering Intern',
+		orgDescription:
+			'Spearheaded the design and implementation of Sike, a wellness app that gamifies journaling using user sentiment analysis.',
+		description:
+			'During my software engineering internship, I successfully built the user interface of a mobile app using React Native. This involved creating multiple screens, implementing in-app navigation, and designing a user feed to display all available products. I also developed user authentication and post-saving functionality, leveraging Firebase for seamless data management. Through refactoring existing code, I optimized scalability and achieved efficiency gains, putting us three months ahead of schedule. Additionally, I explored natural language processing techniques and used TensorFlow to preprocess data for a sentiment analysis machine learning model. This boosted sentiment prediction accuracy by 30% and enabled effective flagging of inappropriate comments. Collaborating with graphic designers, application testers, and product management, we deployed the app on the iOS store within a tight timeframe of four months, ensuring a successful launch.',
+		website: 'https://www.ucladevx.com/',
+		points: ['React Native', 'Git'],
+		img: 'DevX'
 	}
 ];
 

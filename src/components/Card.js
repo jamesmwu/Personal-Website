@@ -9,6 +9,8 @@ import HackWeb from '../img/HackWeb.png';
 import BruinOdyssey from '../img/BruinOdyssey.png';
 import Jimmy from '../img/Jimmy.png';
 import Taigi from '../img/Taigi.png';
+import DevX from '../img/DevX.png';
+import Arista from '../img/Arista.png';
 
 export default function Card({
 	title,
@@ -38,6 +40,10 @@ export default function Card({
 			setCurImage(() => Jimmy);
 		} else if (expImg === 'Taigi') {
 			setCurImage(() => Taigi);
+		} else if (expImg === 'DevX') {
+			setCurImage(() => DevX);
+		} else if (expImg === 'Arista') {
+			setCurImage(() => Arista);
 		}
 	}, [expImg]);
 
