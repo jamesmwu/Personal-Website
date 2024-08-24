@@ -15,14 +15,34 @@ export const funFacts = [
 export const experiences = [
 	{
 		title: 'Arista Networks',
-		role: 'Incoming Software Engineering Intern',
+		role: 'Software Engineering Intern',
 		orgDescription:
-			'I am an incoming software engineering intern at Arista Networks, a leading provider of cloud networking solutions for large data center and campus environments! Details coming soon :)',
-		description:
-			"During my internship, I took on the challenge of independently implementing a new feature to detect dynamically linked libraries (DLL) in customers' applications, providing vital insights into potential vulnerabilities. This feature was successfully deployed and is currently being used in production, delivering significant value to our customers. To complement this functionality, I built a responsive and accessible user interface, leveraging Angular.js and custom GraphQL queries. The interface incorporated sorting and filtering functionalities based on architecture, path, or platform, allowing users to analyze the results within the application efficiently. Additionally, I introduced a TypeScript service to detect window resize changes in the product dashboard, ensuring a seamless user experience across different screen dimensions. As part of optimizing the development process, I modified the configuration file code, resulting in a remarkable 94% improvement in development build times and reducing refresh speeds from 50 seconds to just 3 seconds.",
+			'Arista is a leading provider of cloud networking solutions for large data center and campus environments. I was on the traffic policy and routing team, and built a feature to dynamically police heavy or malicious packet flows that overwhelmed the control plane.',
+		description: '',
 		website: 'https://www.arista.com/en/',
-		points: ['Angular', 'TypeScript', 'GraphQL', 'Git'],
+		points: ['TACC', 'C++', 'Python', 'Git'],
 		img: 'Arista'
+	},
+	{
+		title: 'UCLA Sensing and Robotics for Infrastructure',
+		role: 'Undergraduate Researcher',
+		orgDescription:
+			'SRI is a research lab at UCLA that focuses on developing innovative sensing and robotics technologies for infrastructure applications. I work on a project to predict the probability of an avalanche given satellite images.',
+		description: '',
+		website: 'https://sri-lab.seas.ucla.edu/',
+		points: ['Python', 'TensorFlow', 'OpenCV', 'SciKit-Learn'],
+		img: 'SRI'
+	},
+	{
+		title: 'UCLA Scalable Analytics Institute',
+		role: 'Undergraduate Researcher',
+		orgDescription:
+			'ScAI is a research lab at UCLA that focuses on developing scalable analytics solutions for a variety of applications. I work on a project to evaluate the reasoning and comprehension abilities of various AI models.',
+		description: '',
+		website:
+			'https://communitypartnerships.ucla.edu/program/scalable-analytics-institute-scai/',
+		points: ['Python', 'TensorFlow', 'OpenCV', 'SciKit-Learn'],
+		img: 'SCAI'
 	},
 	{
 		title: 'UCLA ACM Hack',
@@ -122,7 +142,7 @@ export const projects = [
 		title: 'Taigi',
 		role: 'Congressional App Challenge',
 		orgDescription:
-			'I helped create Taigi, a currently published mobile app for easy translation between English and Taiwanese, with 500+ downloads as of August 2023.',
+			'I helped create Taigi, a published mobile app from 2020-2023. It allowed for easy translation between English and Taiwanese, with 5000+ downloads by August 2023.',
 		description: '',
 		website:
 			'https://play.google.com/store/apps/details?id=com.taigipog.taiwaneseappv1&hl=en_US&gl=US',
@@ -155,7 +175,7 @@ export const toastWebsite = [
 
 export const aboutMe = [
 	{
-		title: '😼 Things About Me',
+		title: '😼 My Goal',
 		description: [
 			'I consider myself a talkative introvert-- I love meeting new people and having conversations, but I also enjoy vibing on my own.',
 			"I have a couple ways of keeping myself mindlessly entertained. I follow the NBA (Lakers WOOO) and watch Minecraft videos. I also like playing Super Smash Bros Ultimate... my friends don't like playing with me anymore because I always beat them. But I like watching professional play and practicing the techniques they use, sometimes I'll even take notes for fun if I see something especially intriguing.",

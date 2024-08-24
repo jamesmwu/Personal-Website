@@ -12,7 +12,7 @@ const internships = [
   {
     title: 'Hussle',
     description:
-      "Hussle is a startup founded at UCLA. It seeks to provide a platform for students to exchange goods and services with one another, acting as an intermediary for those who'd like to maintain side hustles and customers who'd prefer cheaper alternatives to expensive services targeted at college students. As a front-end development intern, I built several screens and features of the Hussle app listed below. The app is currently published and downloadable for iOS on the app store.",
+      'Hussle is a startup founded at UCLA. It seeks to provide a platform for students to exchange goods and services with one another, acting as an intermediary for those who\'d like to maintain side hustles and customers who\'d prefer cheaper alternatives to expensive services targeted at college students. As a front-end development intern, I built several screens and features of the Hussle app listed below. The app is currently published and downloadable for iOS on the app store.',
     points: [
       'Constructed and implemented several screens and features of Hussle, an online student marketplace app, using React Native.',
       'Built user authentication, saved post functionality, navigation, and a user feed displaying all services and products offered by the community.',

@@ -45,7 +45,7 @@ function Work({ fadeIn }) {
 
 				<h1 id='heroTextWork'>James Wu</h1>
 				<p>
-					Hi there! I'm currently a junior studying computer science at UCLA.
+					Hi there! I'm currently a senior studying computer science at UCLA.
 					Welcome to my website, enjoy your stay :)
 				</p>
 			</div>
@@ -93,13 +93,13 @@ function Fun({ fadeIn }) {
 					<li></li>
 					<li></li>
 				</ul>
-				<h1 id='heroText'>Yo I'm James</h1>
+				<h1 id='heroText'>Hey I'm James</h1>
 				<p>
-					I am many things. A Smash bros enthusiast, a violinist, an academic
-					weapon, and a mediocre artist.
+					Coding is something I find fun, and below are some of the projects
+					I've worked on in my spare time!
 					<br />
 					<br />
-					But most of all, I'm super employable.
+					Feel free to check them out :D
 				</p>
 			</div>
 			<div className='experiences'>

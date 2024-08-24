@@ -19,7 +19,7 @@ const orgs = [
   {
     title: 'DevX',
     description:
-      "DevX is UCLA's premier software project club, where groups are formed and guided in student-led software projects to improve the livelihoods of others and contribute towards various problems. Here, real-world applications of development practices are employed and members are given valuable experiences that directly translate to skills in industry.",
+      'DevX is UCLA\'s premier software project club, where groups are formed and guided in student-led software projects to improve the livelihoods of others and contribute towards various problems. Here, real-world applications of development practices are employed and members are given valuable experiences that directly translate to skills in industry.',
     points: [
       'Promoted greater connectivity and club outreach, increasing individual group retention substantially',
       'Worked on projects with a focus on writing clean, scalable code',

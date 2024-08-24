@@ -11,6 +11,8 @@ import Jimmy from '../img/Jimmy.png';
 import Taigi from '../img/Taigi.png';
 import DevX from '../img/DevX.png';
 import Arista from '../img/Arista.png';
+import SRI from '../img/SRI.png';
+import SCAI from '../img/SCAI.png';
 
 export default function Card({
 	title,
@@ -44,6 +46,10 @@ export default function Card({
 			setCurImage(() => DevX);
 		} else if (expImg === 'Arista') {
 			setCurImage(() => Arista);
+		} else if (expImg === 'SRI') {
+			setCurImage(() => SRI);
+		} else if (expImg === 'SCAI') {
+			setCurImage(() => SCAI);
 		}
 	}, [expImg]);
 

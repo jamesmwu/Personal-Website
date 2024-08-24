@@ -1,12 +1,12 @@
 # James's Website
 
-Hello! Welcome to the README of my website. Whether you are a recruiter or a friend stalking me, I'm happy to have you here. Feel free to clone the repo and glance at at the code.
+Hello! Welcome to the README of my website. Feel free to clone the repo and glance at at the code! :)
 
 ## Available Scripts
 
-These are more like just a reminder to myself, because I'd be kind of surprised if this becomes a ginormous project with hundreds of contributors.
+These are more like just a reminder to myself than anything else.
 
-However, because this isn't a massive scale corporation that requires many tests and careful reviews before publishing, I really only use these two following commands.
+Because this isn't a massive scale corporation that requires many tests and careful reviews before publishing, I really only use these two following commands.
 
 ### `npm start`
 
