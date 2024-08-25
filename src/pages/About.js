@@ -17,6 +17,12 @@ function About() {
 		return () => clearTimeout(fadeInTimeout);
 	}, []);
 
+	function parseDescription(description) {
+		const bldDesc = description.replace(/\[(.*?)\]/g, '<b>[$1]</b>');
+
+		return <span dangerouslySetInnerHTML={{ __html: bldDesc }} />;
+	}
+
 	return (
 		<div
 			id='aboutPage'
@@ -65,7 +71,7 @@ function About() {
 							trigger={info.title}
 						>
 							{info.description.map((desc, idx) => (
-								<p key={idx}>{desc}</p>
+								<p key={idx}>{parseDescription(desc)}</p>
 							))}
 						</Collapsible>
 					))}
