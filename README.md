@@ -16,6 +16,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+### `npx eslint ./src --fix`
+
+Runs the linter blah blah blah
+
 ### `npm run deploy`
 
 Publishes the deploy to GH pages. You can also use `$ npm run deploy -- -m "Deploy React app to GitHub Pages"` to specify a commit message.

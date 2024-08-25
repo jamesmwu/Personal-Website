@@ -21,15 +21,21 @@ export default function EndCard({ work }) {
 			closeOnClick: true,
 			pauseOnHover: false,
 			draggable: true,
-			className: `${customBackgroundClass} ${customProgressBarClass} ${customSpacingClass}`,
+			className: `
+			${customBackgroundClass}
+			${customProgressBarClass}
+			${customSpacingClass}
+		  `.trim(),
 			theme: 'colored'
 		});
+
 		if (toastIdx === toastWebsite.length - 1) {
 			setToastIdx(0);
 		} else {
 			setToastIdx(toastIdx + 1);
 		}
 	};
+
 	const [toastIdx, setToastIdx] = useState(0);
 
 	return (
@@ -40,7 +46,7 @@ export default function EndCard({ work }) {
 			tiltMaxAngleY={3.5}
 		>
 			<div className='container glass'>
-				{work ? <h1>Contact Me</h1> : <h1>Let's Chat!</h1>}
+				{work ? <h1>Contact Me</h1> : <h1>Let&apos;s Chat!</h1>}
 				<div className='pfpWrapper'>
 					<img
 						src={work ? Professional_PFP : IRL_PFP}
@@ -54,18 +60,24 @@ export default function EndCard({ work }) {
 					)}
 				</div>
 				<div className='textWrapper'>
+					{/* prettier-ignore */}
 					<p>
-						That's the website! Hope you enjoyed, I built it myself. The code is{' '}
+						That&apos;s the website! Hope you enjoyed, I built it
+						myself. The code is&nbsp;
 						<a
-							href='https://github.com/jamesmwu/jamesmwu.github.io'
+							href=
+							'https://github.com/jamesmwu/jamesmwu.github.io'
 							target='_blank'
 							rel='noopener noreferrer'
 						>
 							open-source
-						</a>{' '}
-						if you'd like to take a look.
+						</a>
+						&nbsp;if you&apos;d like to take a look.
 					</p>
-					<p>I'm always open to chatting, so feel free to send me a message!</p>
+					{/* prettier-ignore */}
+					<p>I&apos;m always open to chatting, so feel free to send me
+						a message!
+					</p>
 				</div>
 				<div className='buttonWrapper'>
 					<a
@@ -85,7 +97,10 @@ export default function EndCard({ work }) {
 						<button className='card-website-end'>LinkedIn</button>
 					</a>
 					<div className='card-website-wrapper'>
-						<button className='card-website-end' onClick={notify}>
+						<button
+							className='card-website-end'
+							onClick={notify}
+						>
 							Website
 						</button>
 					</div>

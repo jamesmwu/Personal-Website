@@ -24,7 +24,10 @@ function Home({ toggle }) {
 
 function Work({ fadeIn }) {
 	return (
-		<div id='homePage' className={fadeIn ? 'fade-in' : 'fade-out'}>
+		<div
+			id='homePage'
+			className={fadeIn ? 'fade-in' : 'fade-out'}
+		>
 			<div className='homeBio'>
 				<ul className='background'>
 					<li></li>
@@ -44,9 +47,10 @@ function Work({ fadeIn }) {
 				</ul>
 
 				<h1 id='heroTextWork'>James Wu</h1>
+				{/* prettier-ignore */}
 				<p>
-					Hi there! I'm currently a senior studying computer science at UCLA.
-					Welcome to my website, enjoy your stay :)
+					Hi there! I&apos;m currently a senior studying computer
+					science at UCLA. Welcome to my website, enjoy your stay :)
 				</p>
 			</div>
 			<div className='experiences'>
@@ -75,7 +79,10 @@ function Work({ fadeIn }) {
 
 function Fun({ fadeIn }) {
 	return (
-		<div id='homePage' className={!fadeIn ? 'fade-in' : 'fade-out'}>
+		<div
+			id='homePage'
+			className={!fadeIn ? 'fade-in' : 'fade-out'}
+		>
 			<div className='homeBio'>
 				<ul className='background'>
 					<li></li>
@@ -93,10 +100,11 @@ function Fun({ fadeIn }) {
 					<li></li>
 					<li></li>
 				</ul>
-				<h1 id='heroText'>Hey I'm James</h1>
+				<h1 id='heroText'>Hey I&apos;m James</h1>
+				{/* prettier-ignore */}
 				<p>
-					Coding is something I find fun, and below are some of the projects
-					I've worked on in my spare time!
+					Coding is something I find fun, and below are some of the
+					projects I&apos;ve worked on in my spare time!
 					<br />
 					<br />
 					Feel free to check them out :D

@@ -32,15 +32,21 @@ function NavBar({ toggle, setToggle }) {
 			closeOnClick: true,
 			pauseOnHover: false,
 			draggable: true,
-			className: `${customBackgroundClass} ${customProgressBarClass} ${customSpacingClass}`,
+			className: `
+			${customBackgroundClass} 
+			${customProgressBarClass} 
+			${customSpacingClass}
+		  `.trim(),
 			theme: 'colored'
 		});
+
 		if (funIdx === funFacts.length - 1) {
 			setFunIdx(0);
 		} else {
 			setFunIdx(funIdx + 1);
 		}
 	};
+
 	const [open, setOpen] = useState(false);
 	const [funIdx, setFunIdx] = useState(0);
 	const toggleHamburger = () => {
@@ -51,9 +57,12 @@ function NavBar({ toggle, setToggle }) {
 		<div className='navAnchor'>
 			<div className='navigation'>
 				<div className='interactive'>
+					{/* prettier-ignore */}
 					<div
 						className={`switches-container ${
-							location.pathname === '/about' ? 'switches-container-grayed' : ''
+							location.pathname === '/about' ?
+							'switches-container-grayed'
+							: ''
 						}`}
 					>
 						<input
@@ -77,7 +86,10 @@ function NavBar({ toggle, setToggle }) {
 							</div>
 						</div>
 					</div>
-					<button className='funFact' onClick={notify}>
+					<button
+						className='funFact'
+						onClick={notify}
+					>
 						!
 					</button>
 					<ToastContainer
@@ -106,7 +118,10 @@ function NavBar({ toggle, setToggle }) {
 							<span></span>
 						</div>
 					</div>
-					<div className={`dropdown-menu ${open ? 'active' : 'inactive'}`}>
+					{/* prettier-ignore */}
+					<div className={
+						`dropdown-menu ${open ? 'active' : 'inactive'}`
+					}>
 						<ul className='dropdown-item-container'>
 							<Link
 								className='navLinks'

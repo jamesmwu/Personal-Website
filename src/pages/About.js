@@ -18,32 +18,52 @@ function About() {
 	}, []);
 
 	return (
-		<div id='aboutPage' className={fadeIn ? 'fade-in' : 'fade-out'}>
+		<div
+			id='aboutPage'
+			className={fadeIn ? 'fade-in' : 'fade-out'}
+		>
 			<div className='imageContainer'>
 				<div className='imageWrapper left'>
-					<img id='sunset' src={Sunset} alt='Me during a sunset' />
+					<img
+						id='sunset'
+						src={Sunset}
+						alt='Me during a sunset'
+					/>
 				</div>
 				<div className='imageWrapper larger'>
-					<img id='cactus' src={Cactus} alt='Me posing next to a cactus' />
+					<img
+						id='cactus'
+						src={Cactus}
+						alt='Me posing next to a cactus'
+					/>
 				</div>
 				<div className='imageWrapper right'>
-					<img id='deer' src={Deer} alt='Me holding a deer head over my face' />
+					<img
+						id='deer'
+						src={Deer}
+						alt='Me holding a deer head over my face'
+					/>
 				</div>
 			</div>
 
 			<div className='aboutBio'>
 				<div className='aboutText'>
-					<h1 id='heroText'>Hello! I'm James.</h1>
+					<h1 id='heroText'>Hello! I&apos;m James.</h1>
+					{/* prettier-ignore */}
 					<p id='heroDesc'>
-						👋 Hello! I'm James, a CS student at UCLA with a passion for
-						software development. As a developer, I thrive on creating
-						innovative solutions and exploring new technologies.
+						👋 Hello! I&apos;m James, a CS student at UCLA with a
+						passion for software development. As a developer, I
+						thrive on creating innovative solutions and exploring
+						new technologies.
 					</p>
 				</div>
 
 				<div className='subSection'>
 					{aboutMe.map((info, index) => (
-						<Collapsible key={index} trigger={info.title}>
+						<Collapsible
+							key={index}
+							trigger={info.title}
+						>
 							{info.description.map((desc, idx) => (
 								<p key={idx}>{desc}</p>
 							))}

@@ -18,9 +18,9 @@ export default function Card({
 	title,
 	role,
 	orgDescription,
-	description,
+	// description,
 	website,
-	points,
+	// points,
 	expImg
 }) {
 	const [curImage, setCurImage] = useState(placeholder);
@@ -54,19 +54,31 @@ export default function Card({
 	}, [expImg]);
 
 	return (
-		<a href={website} target='_blank' rel='noopener noreferrer' id='parentLink'>
+		<a
+			href={website}
+			target='_blank'
+			rel='noopener noreferrer'
+			id='parentLink'
+		>
 			<div className='card'>
 				<div className='card-content'>
 					<div className='card-text'>
 						<h2 className='card-title'>{title}</h2>
 						<p className='card-role'>{role}</p>
 						<p className='card-org-description'>{orgDescription}</p>
-						<a href={website} target='_blank' rel='noopener noreferrer'>
+						<a
+							href={website}
+							target='_blank'
+							rel='noopener noreferrer'
+						>
 							<button className='card-website'>Link</button>
 						</a>
 					</div>
 					<div className='card-image'>
-						<img src={curImage} alt='Project' />
+						<img
+							src={curImage}
+							alt='Project'
+						/>
 					</div>
 				</div>
 			</div>
